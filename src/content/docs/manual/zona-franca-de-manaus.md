@@ -41,7 +41,7 @@ As regras da ZFM não entram em vigor todas juntas. A LC fixa as datas no art. 5
 | Regulamento | Regra de vigência para a ZFM | Fonte |
 |---|---|---|
 | Decreto 12.955/2026 (CBS) | arts. 518 a 528 (inclui o art. 528, suspensão na importação) e art. 531 (crédito presumido de CBS) a partir de 1º de janeiro de 2027; os demais (arts. 529, 530, 532 a 535 e 543 a 550) na data de publicação | [art. 619 do Decreto 12.955/2026](/legislacao/federal/decreto-12955-2026/livro-3/#art-619) |
-| Resolução CGIBS 6/2026 (IBS) | art. 515 a partir de 1º de janeiro de 2027; arts. 517, 518, 520, 521, 522 e 532 a 564 (controles de ingresso) a partir de 1º de janeiro de 2029; os demais na data de publicação | [art. 617 da Resolução CGIBS 6/2026](/legislacao/cgibs/res-cgibs-6-2026/livro-3/#art-617), na redação da [Resolução CGIBS 13/2026](/legislacao/cgibs/res-cgibs-13-2026/#art-1) |
+| Resolução CGIBS 6/2026 (IBS) | art. 515 a partir de 1º de janeiro de 2027; arts. 517, 518, 520, 521, 522, 528, 529, 532 a 564 (controles de ingresso) e 615 (redução transitória dos percentuais) a partir de 1º de janeiro de 2029; os demais na data de publicação | [art. 617 da Resolução CGIBS 6/2026](/legislacao/cgibs/res-cgibs-6-2026/livro-3/#art-617), na redação da [Resolução CGIBS 13/2026](/legislacao/cgibs/res-cgibs-13-2026/#art-1) |
 
 :::caution[Controles de ingresso com datas diferentes]
 Para a CBS, os procedimentos de internamento do Decreto ([arts. 543 a 548](/legislacao/federal/decreto-12955-2026/livro-2-titulo-11/#art-543)) não constam das exceções do art. 619 e, portanto, já produzem efeitos. Para o IBS, os arts. 532 a 564 da Resolução CGIBS 6/2026 (desembaraço, internamento, desinternamento) só produzem efeitos a partir de 2029, segundo a redação dada pela Resolução CGIBS 13/2026.
