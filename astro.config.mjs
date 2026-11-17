@@ -35,6 +35,7 @@ export default defineConfig({
       defaultLocale: 'root',
       locales: { root: { label: 'Português', lang: 'pt-BR' } },
       logo: { src: './src/assets/marca.svg', alt: '' },
+      favicon: '/favicon.svg',
       customCss: [
         '@fontsource-variable/source-sans-3',
         '@fontsource-variable/source-serif-4',
