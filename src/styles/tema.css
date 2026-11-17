@@ -12,10 +12,17 @@
   --c-ink-strong: #f1f0ea;
   --c-text: #e2e0d8;
   --c-muted: #b4b6ae;
-  --c-accent: #9dd6bb;
-  --c-accent-strong: #b9dcc9;
-  --c-accent-soft: #22352c;
+  --c-accent: #8fbef2;
+  --c-accent-strong: #bcd8f8;
+  --c-accent-soft: #1b2a3e;
   --c-on-accent: #121816;
+  /* Cores por área do manual */
+  --area-fund: #8fbef2;
+  --area-zfm: #7fcfa8;
+  --area-alc: #eba27e;
+  --area-fund-soft: #1b2a3e;
+  --area-zfm-soft: #1a3328;
+  --area-alc-soft: #3a2519;
   --c-line: color-mix(in oklab, var(--c-ink) 12%, transparent);
   --c-line-strong: color-mix(in oklab, var(--c-ink) 22%, transparent);
 
@@ -90,9 +97,9 @@
   --c-ink-strong: #111614;
   --c-text: #1f2523;
   --c-muted: #4b524e;
-  --c-accent: #17614a;
-  --c-accent-strong: #134d3a;
-  --c-accent-soft: #e2efe7;
+  --c-accent: #1b5ea6;
+  --c-accent-strong: #134a85;
+  --c-accent-soft: #e4eefa;
   --c-on-accent: #ffffff;
 
   --sl-color-white: var(--c-ink-strong);
@@ -106,6 +113,12 @@
   --sl-color-black: var(--c-bg);
   --sl-color-text-accent: var(--c-accent);
 
+  --area-fund: #1b5ea6;
+  --area-zfm: #1d6b52;
+  --area-alc: #b4532a;
+  --area-fund-soft: #e4eefa;
+  --area-zfm-soft: #e2efe7;
+  --area-alc-soft: #f8e8de;
   --aviso-atencao: #a8670a;
   --aviso-atencao-fundo: #fbf2df;
   --aviso-nota: #2b62a8;

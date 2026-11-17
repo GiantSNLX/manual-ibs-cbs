@@ -2,15 +2,15 @@
    Identidade: faixa verde-floresta no topo, papel claro embaixo, dourado como segunda cor. */
 :root:has(.inicio-hero) {
   --gut: 80px;
-  --hero-bg: #123b2f;
-  --hero-bg-2: #0d2e24;
+  --hero-bg: #14263f;
+  --hero-bg-2: #0b1728;
   --hero-ink: #f7f4ec;
-  --hero-text: #d9e3dd;
+  --hero-text: #d6dfeb;
   --hero-line: rgba(247, 244, 236, 0.22);
   --ouro: #e2b04e;
   scroll-padding-top: calc(var(--sl-nav-height) + 24px);
 }
-:root[data-theme='dark']:has(.inicio-hero) { --hero-bg: #10261f; --hero-bg-2: #0b1c16; }
+:root[data-theme='dark']:has(.inicio-hero) { --hero-bg: #122136; --hero-bg-2: #0a1320; }
 @media (max-width: 1023px) { :root:has(.inicio-hero) { --gut: 40px; } }
 @media (max-width: 639px) { :root:has(.inicio-hero) { --gut: 20px; scroll-padding-top: calc(var(--sl-nav-height) + 64px); } }
 
@@ -81,7 +81,7 @@
   box-shadow: 0 10px 30px -12px rgba(0, 0, 0, 0.45);
   transition: transform var(--m-in) var(--ease), box-shadow var(--m-in) var(--ease);
 }
-.busca-grande svg { flex: none; color: #17614a; }
+.busca-grande svg { flex: none; color: #1b5ea6; }
 .busca-grande span { flex: 1; }
 .busca-grande kbd { background: #f1eee6; color: #2b3330; border-color: #d8d3c6; }
 .busca-grande:hover { transform: translateY(-1px); box-shadow: 0 0 0 4px color-mix(in oklab, var(--ouro) 45%, transparent), 0 14px 34px -12px rgba(0, 0, 0, 0.5); }
@@ -125,6 +125,7 @@
   font-weight: 600;
   font-size: 1rem;
 }
+.passos li:nth-child(1) .passo-num { background: var(--area-zfm); }
 .passos li:nth-child(3) .passo-num { background: var(--aviso-atencao); color: #1b1a14; }
 .passos h3 { margin: 4px 0 0; font-size: 1.0625rem; font-weight: 600; color: var(--c-ink-strong); }
 .passos p { margin: 4px 0 0; font-size: 0.96875rem; line-height: 1.55; color: var(--c-text); }
@@ -159,7 +160,8 @@
   .passo-num { animation: aparecer 420ms var(--m-ease-enter) both; }
   .passos li:nth-child(1) .passo-num { animation-delay: 650ms; }
   .passos li:nth-child(2) .passo-num { animation-delay: 950ms; }
-  .passos li:nth-child(3) .passo-num { animation-delay: 1250ms; }
+  .passos li:nth-child(1) .passo-num { background: var(--area-zfm); }
+.passos li:nth-child(3) .passo-num { animation-delay: 1250ms; }
   .exemplo-cita { animation: realce 1200ms var(--ease) 1500ms 1; }
   .hero-marca { animation: surgir 1600ms var(--m-ease-enter) both; }
 }
@@ -304,3 +306,17 @@
 @media (prefers-reduced-motion: reduce) {
   .cartao, .parte a, .busca-grande { transition: none; }
 }
+
+/* Cores por área: azul (fundamentos), verde (ZFM), terracota (ALC e estados). */
+[data-area='fund'] { --area: var(--area-fund); --area-soft: var(--area-fund-soft); }
+[data-area='zfm'] { --area: var(--area-zfm); --area-soft: var(--area-zfm-soft); }
+[data-area='alc'] { --area: var(--area-alc); --area-soft: var(--area-alc-soft); }
+.cartao[data-area] .cartao-icone { background: var(--area-soft); color: var(--area); }
+.cartao[data-area]:hover { border-color: color-mix(in oklab, var(--area) 50%, transparent); }
+.cartao[data-area]:hover .cartao-icone { background: var(--area); color: #fff; }
+.cartao[data-area]:hover .cartao-titulo { color: var(--area); }
+.parte[data-area] { border-top-color: var(--area); }
+.parte[data-area] .parte-num { background: var(--area-soft); color: var(--area); }
+.parte[data-area] a::after { color: var(--area); }
+.parte[data-area] a:hover { color: var(--area); }
+.grupo[data-area] h3 { border-bottom-color: var(--area); }
