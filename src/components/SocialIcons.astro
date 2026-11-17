@@ -1,0 +1,17 @@
+---
+// Ocupa o lugar dos ícones sociais no cabeçalho (ao lado da escolha de tema):
+// links principais do site. Na home, inclui o atalho para as situações frequentes.
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const ehInicio = ['index', ''].includes(Astro.locals.starlightRoute.entry.id);
+const atual = Astro.url.pathname.replace(base, '');
+const links = [
+  ...(ehInicio ? [{ texto: 'Situações frequentes', href: '#sec-situacoes' }] : []),
+  { texto: 'Manual', href: base + '/manual/', ativo: atual.startsWith('/manual/') },
+  { texto: 'Legislação', href: ehInicio ? '#sec-lei' : base + '/legislacao/federal/lc-214-2025/', ativo: atual.startsWith('/legislacao/') },
+  { texto: 'Fontes', href: base + '/fontes/', ativo: atual.startsWith('/fontes/') },
+];
+---
+
+<nav class="cabecalho-nav" aria-label="Principal">
+  {links.map((l) => <a href={l.href} aria-current={l.ativo ? 'page' : undefined}>{l.texto}</a>)}
+</nav>

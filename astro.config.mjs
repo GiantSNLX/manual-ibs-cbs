@@ -42,7 +42,7 @@ export default defineConfig({
         './src/styles/legislacao.css',
         './src/styles/inicio.css',
       ],
-      components: { Hero: './src/components/Hero.astro' },
+      components: { Hero: './src/components/Hero.astro', SocialIcons: './src/components/SocialIcons.astro' },
       tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 },
       lastUpdated: false,
       pagination: true,

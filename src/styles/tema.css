@@ -296,3 +296,34 @@ starlight-toc a[aria-current='true'] {
 .sl-markdown-content {
   overflow-wrap: break-word;
 }
+
+/* Cabeçalho: título à esquerda; à direita, links principais, busca (só ícone) e tema. */
+.cabecalho-nav { display: flex; align-items: center; gap: 24px; }
+.cabecalho-nav a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--c-text);
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  white-space: nowrap;
+}
+.cabecalho-nav a:hover,
+.cabecalho-nav a[aria-current='page'] { color: var(--c-accent); border-bottom-color: var(--c-accent); }
+header.header .header > :has(> site-search) { order: 3; }
+header.header .right-group { margin-inline-start: auto; }
+/* A busca vira um botão de ícone: o Ctrl K continua valendo em todo o site. */
+@media (min-width: 50rem) {
+  site-search > button[data-open-modal] {
+    width: 2.75rem;
+    max-width: 2.75rem;
+    padding: 0;
+    justify-content: center;
+    border-radius: var(--r-md);
+  }
+  site-search > button[data-open-modal] > :not(svg) { display: none; }
+}
+/* Na home a busca grande já está no topo da página. */
+:root:has(.inicio-hero) header.header .header > :has(> site-search) { display: none; }
