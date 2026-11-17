@@ -6,8 +6,16 @@ const { tagline = '' } = data.hero || {};
 const exemplos = ['Suframa', 'crédito presumido', 'split payment', 'art. 444'];
 ---
 
+<nav class="inicio-nav" aria-label="Nesta página">
+  <div class="inicio-wrap">
+    <a href="#sec-situacoes">Situações frequentes</a>
+    <a href="#sec-manual">Manual</a>
+    <a href="#sec-lei">Legislação</a>
+    <a href={import.meta.env.BASE_URL + 'fontes/'}>Fontes</a>
+  </div>
+</nav>
 <section class="inicio-hero" aria-labelledby={PAGE_TITLE_ID}>
-  <div class="inicio-wrap"><div class="inicio-hero-conteudo">
+  <div class="inicio-wrap inicio-hero-grade"><div class="inicio-hero-conteudo">
     <p class="inicio-sobre">Reforma tributária do consumo</p>
     <h1 id={PAGE_TITLE_ID} data-page-title>
       IBS e CBS na Zona Franca de Manaus, no Amazonas e em Roraima
@@ -23,7 +31,15 @@ const exemplos = ['Suframa', 'crédito presumido', 'split payment', 'art. 444'];
       <span>Por exemplo:</span>
       {exemplos.map((e) => <button type="button" data-abrir-busca={e}>{e}</button>)}
     </p>
-  </div></div>
+  </div>
+  <aside class="inicio-ler" aria-labelledby="como-ler">
+    <h2 id="como-ler">Como ler este manual</h2>
+    <dl>
+      <div><dt>Cada regra cita a lei</dt><dd>A referência no texto, como “art. 444 da LC 214/2025”, abre o artigo exato. Dentro da lei, clique no número do artigo para copiar o link dele.</dd></div>
+      <div><dt>Os avisos merecem atenção</dt><dd>Os quadros em amarelo indicam quando lei e regulamento divergem, quando falta um ato oficial ou quando o texto admite mais de uma leitura.</dd></div>
+      <div><dt>Material de consulta</dt><dd>O texto legal vem das publicações oficiais e pode ter mudado depois da data de captura. Para uma decisão fiscal, confira a fonte. <a href={import.meta.env.BASE_URL + 'fontes/'}>Ver fontes e datas</a>.</dd></div>
+    </dl>
+  </aside></div>
 </section>
 
 <script>

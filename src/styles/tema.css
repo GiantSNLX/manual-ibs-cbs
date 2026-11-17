@@ -5,14 +5,14 @@
 /* ---------- Tokens: escuro (padrão do Starlight) ---------- */
 :root,
 ::backdrop {
-  --c-bg: #171a19;
-  --c-surface: #1e2220;
+  --c-bg: #151817;
+  --c-surface: #1c201e;
   --c-surface-2: #252a27;
-  --c-ink: #e6e4dc;
+  --c-ink: #eceae3;
   --c-ink-strong: #f1f0ea;
-  --c-text: #d6d4cb;
-  --c-muted: #a3a59d;
-  --c-accent: #8cc5aa;
+  --c-text: #e2e0d8;
+  --c-muted: #b4b6ae;
+  --c-accent: #9dd6bb;
   --c-accent-strong: #b9dcc9;
   --c-accent-soft: #22352c;
   --c-on-accent: #121816;
@@ -83,14 +83,14 @@
 /* ---------- Tokens: claro ---------- */
 :root[data-theme='light'],
 [data-theme='light'] ::backdrop {
-  --c-bg: #fcfbf8;
-  --c-surface: #f4f1ea;
+  --c-bg: #fffefc;
+  --c-surface: #f5f3ee;
   --c-surface-2: #ece8de;
-  --c-ink: #222a27;
-  --c-ink-strong: #171d1b;
-  --c-text: #2b3330;
-  --c-muted: #5c635f;
-  --c-accent: #1d6b52;
+  --c-ink: #1a201e;
+  --c-ink-strong: #111614;
+  --c-text: #1f2523;
+  --c-muted: #4b524e;
+  --c-accent: #17614a;
   --c-accent-strong: #134d3a;
   --c-accent-soft: #e2efe7;
   --c-on-accent: #ffffff;

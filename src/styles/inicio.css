@@ -16,13 +16,59 @@
   margin-inline: auto;
 }
 
+/* ---------- Navegação da página ---------- */
+.inicio-nav {
+  position: sticky;
+  top: var(--sl-nav-height);
+  z-index: 5;
+  background: var(--c-bg);
+  border-bottom: 1px solid var(--c-line);
+}
+.inicio-nav .inicio-wrap { display: flex; gap: 4px 28px; flex-wrap: wrap; }
+.inicio-nav a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--c-text);
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+}
+.inicio-nav a:hover { color: var(--c-accent); border-bottom-color: var(--c-accent); }
+:root:has(.inicio-hero) { scroll-padding-top: calc(var(--sl-nav-height) + 64px); }
+
 /* ---------- Hero ---------- */
 .inicio-hero {
   padding-block: clamp(56px, 9vh, 104px) clamp(56px, 8vh, 88px);
   background: var(--c-surface);
   border-bottom: 1px solid var(--c-line);
 }
-.inicio-hero-conteudo { max-width: 52rem; }
+.inicio-hero-grade {
+  display: grid;
+  grid-template-columns: minmax(0, 7fr) minmax(0, 5fr);
+  gap: 64px;
+  align-items: center;
+}
+.inicio-ler {
+  padding: 28px 30px;
+  border: 1px solid var(--c-line-strong);
+  border-radius: var(--r-lg);
+  background: var(--c-bg);
+}
+.inicio-ler h2 {
+  margin: 0 0 8px;
+  font-family: var(--f-titulo);
+  font-size: 1.375rem;
+  font-weight: 600;
+  color: var(--c-ink-strong);
+}
+.inicio-ler dl { margin: 0; }
+.inicio-ler div { padding: 14px 0; border-bottom: 1px solid var(--c-line); }
+.inicio-ler div:last-child { border-bottom: 0; padding-bottom: 0; }
+.inicio-ler dt { font-weight: 600; font-size: 1.0625rem; color: var(--c-ink-strong); }
+.inicio-ler dd { margin: 4px 0 0; font-size: 1rem; line-height: 1.55; color: var(--c-text); }
+.inicio-ler a { color: var(--c-accent); text-underline-offset: 0.2em; }
 .inicio-sobre {
   margin: 0 0 16px;
   font-size: 0.9375rem;
@@ -102,7 +148,7 @@
   .inicio-hero-conteudo > * { animation: subir 560ms var(--m-ease-enter) both; }
   .inicio-hero-conteudo > :nth-child(2) { animation-delay: 60ms; }
   .inicio-hero-conteudo > :nth-child(3) { animation-delay: 120ms; }
-  .inicio-hero-conteudo > :nth-child(n + 4) { animation-delay: 200ms; }
+  .inicio-ler { animation: subir 560ms var(--m-ease-enter) 200ms both; }
 }
 @keyframes subir { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: none; } }
 
@@ -140,15 +186,15 @@
 .situacoes {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 16px;
+  gap: 12px;
 }
 .situacoes li { display: flex; }
 .cartao {
   display: flex;
   flex-direction: column;
-  gap: 6px;
+  gap: 4px;
   width: 100%;
-  padding: 20px 22px;
+  padding: 14px 18px;
   border: 1px solid var(--c-line);
   border-left: 3px solid var(--c-accent);
   border-radius: var(--r-md);
@@ -156,8 +202,8 @@
   text-decoration: none;
   transition: transform var(--m-out) var(--ease), border-color var(--m-out) var(--ease), box-shadow var(--m-out) var(--ease);
 }
-.cartao-titulo { font-size: 1.0625rem; font-weight: 600; line-height: 1.35; color: var(--c-ink-strong); }
-.cartao-texto { font-size: 1rem; line-height: 1.5; color: var(--c-text); }
+.cartao-titulo { font-size: 1rem; font-weight: 600; line-height: 1.35; color: var(--c-ink-strong); }
+.cartao-texto { font-size: 0.9375rem; line-height: 1.45; color: var(--c-text); }
 @media (hover: hover) and (pointer: fine) {
   .cartao:hover {
     transform: translateY(-2px);
@@ -208,6 +254,8 @@
 .ler p { margin: 8px 0 0; font-size: 1rem; line-height: 1.6; color: var(--c-text); }
 
 @media (max-width: 1023px) {
+  .inicio-hero-grade { grid-template-columns: 1fr; gap: 32px; }
+  .inicio-ler { max-width: 40rem; }
   .situacoes { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .partes, .ler { grid-template-columns: 1fr; gap: 32px; }
   .normas { grid-template-columns: 1fr 1fr; }
@@ -218,6 +266,13 @@
   .normas { grid-template-columns: 1fr; }
   .grupo-largo ul { columns: 1; }
   .busca-grande kbd { display: none; }
+  .inicio-ler { padding: 20px; }
   .busca-grande { font-size: 1rem; }
   .inicio-intro { margin-bottom: 28px; }
 }
+
+/* A seção de situações é um atalho: mais compacta que as demais. */
+.inicio-secao:has(#sec-situacoes) { padding-block: 48px 56px; }
+.inicio-secao:has(#sec-situacoes) h2 { font-size: clamp(1.375rem, 0.6vw + 1.2rem, 1.625rem); }
+.inicio-secao:has(#sec-situacoes) .inicio-intro { margin: 6px 0 20px; font-size: 1rem; }
+@media (max-width: 639px) { .inicio-nav .inicio-wrap { gap: 0 18px; } .inicio-nav a { font-size: 0.9375rem; } }
