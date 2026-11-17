@@ -1,20 +1,20 @@
 /* Tema do site: tokens de cor (claro e escuro), tipografia e peças comuns.
-   Paletas: claro "cool-white-slate" (verde-azulado de rio), escuro "green-black-bone".
-   Uma única cor de ação (o verde-azulado) para links, botão principal e foco. */
+   Pegada de manual institucional: papel claro, verde-floresta como única cor de ação,
+   títulos em serifa (Source Serif 4) e texto em Source Sans 3. */
 
 /* ---------- Tokens: escuro (padrão do Starlight) ---------- */
 :root,
 ::backdrop {
-  --c-bg: #161c1a;
-  --c-surface: #1d2523;
-  --c-surface-2: #232c29;
-  --c-ink: #e3e2da;
+  --c-bg: #171a19;
+  --c-surface: #1e2220;
+  --c-surface-2: #252a27;
+  --c-ink: #e6e4dc;
   --c-ink-strong: #f1f0ea;
-  --c-text: #d5d5cc;
-  --c-muted: #969c95;
-  --c-accent: #9fc7b8;
-  --c-accent-strong: #c2ded3;
-  --c-accent-soft: #233630;
+  --c-text: #d6d4cb;
+  --c-muted: #a3a59d;
+  --c-accent: #8cc5aa;
+  --c-accent-strong: #b9dcc9;
+  --c-accent-soft: #22352c;
   --c-on-accent: #121816;
   --c-line: color-mix(in oklab, var(--c-ink) 12%, transparent);
   --c-line-strong: color-mix(in oklab, var(--c-ink) 22%, transparent);
@@ -54,8 +54,8 @@
   --aviso-perigo-fundo: #301d1a;
 
   /* Tipografia */
-  --sl-font: 'Geist Variable';
-  --sl-font-mono: 'Geist Mono Variable';
+  --sl-font: 'Source Sans 3 Variable';
+  --f-titulo: 'Source Serif 4 Variable', Georgia, serif;
   --sl-line-height: 1.7;
   --sl-line-height-headings: 1.2;
   --sl-text-h1: clamp(2rem, 1.4vw + 1.5rem, 2.625rem);
@@ -74,8 +74,8 @@
 
   /* Raio "sharp" */
   --r-sm: 4px;
-  --r-md: 6px;
-  --r-lg: 8px;
+  --r-md: 8px;
+  --r-lg: 12px;
 
   --sl-content-width: 48rem;
 }
@@ -83,26 +83,26 @@
 /* ---------- Tokens: claro ---------- */
 :root[data-theme='light'],
 [data-theme='light'] ::backdrop {
-  --c-bg: #f7f9fa;
-  --c-surface: #ecf0f2;
-  --c-surface-2: #e3e9ec;
-  --c-ink: #1f3038;
-  --c-ink-strong: #15232a;
-  --c-text: #23353d;
-  --c-muted: #56646b;
-  --c-accent: #0d7480;
-  --c-accent-strong: #08545d;
-  --c-accent-soft: #dcedee;
+  --c-bg: #fcfbf8;
+  --c-surface: #f4f1ea;
+  --c-surface-2: #ece8de;
+  --c-ink: #222a27;
+  --c-ink-strong: #171d1b;
+  --c-text: #2b3330;
+  --c-muted: #5c635f;
+  --c-accent: #1d6b52;
+  --c-accent-strong: #134d3a;
+  --c-accent-soft: #e2efe7;
   --c-on-accent: #ffffff;
 
   --sl-color-white: var(--c-ink-strong);
   --sl-color-gray-1: var(--c-ink);
   --sl-color-gray-2: var(--c-text);
   --sl-color-gray-3: var(--c-muted);
-  --sl-color-gray-4: #8a979d;
-  --sl-color-gray-5: #c8d2d6;
+  --sl-color-gray-4: #8d938f;
+  --sl-color-gray-5: #d6d2c8;
   --sl-color-gray-6: var(--c-surface);
-  --sl-color-gray-7: #f1f4f5;
+  --sl-color-gray-7: #f7f5f0;
   --sl-color-black: var(--c-bg);
   --sl-color-text-accent: var(--c-accent);
 
@@ -117,7 +117,6 @@
 /* ---------- Base ---------- */
 body {
   background: var(--c-bg);
-  font-feature-settings: 'ss01' on;
   -webkit-font-smoothing: antialiased;
 }
 :where(a, button, summary, input, [tabindex]):focus-visible {
@@ -126,7 +125,7 @@ body {
 }
 kbd {
   white-space: nowrap;
-  font-family: var(--__sl-font-mono);
+  font-family: inherit;
   font-size: 0.8125rem;
   padding: 0.1rem 0.4rem;
   border: 1px solid var(--c-line-strong);
@@ -143,8 +142,9 @@ header.header {
 }
 .site-title {
   color: var(--c-ink-strong);
-  font-weight: 500;
-  letter-spacing: -0.01em;
+  font-family: var(--f-titulo);
+  font-weight: 600;
+  letter-spacing: 0;
 }
 .site-title img {
   height: 1.75rem;
@@ -173,22 +173,22 @@ nav.sidebar summary .group-label {
 
 /* Título da página e conteúdo de leitura */
 h1#_top {
-  font-weight: 500;
-  letter-spacing: -0.025em;
+  font-family: var(--f-titulo);
+  font-weight: 600;
+  letter-spacing: -0.01em;
   text-wrap: balance;
 }
 .sl-markdown-content {
-  font-size: 1.0625rem;
+  font-size: 1.125rem;
 }
 .sl-markdown-content :is(h2, h3, h4, h5) {
-  font-weight: 500;
-  letter-spacing: -0.015em;
+  font-family: var(--f-titulo);
+  font-weight: 600;
+  letter-spacing: -0.005em;
   color: var(--c-ink-strong);
   text-wrap: balance;
 }
-.sl-markdown-content h2 {
-  letter-spacing: -0.02em;
-}
+
 .sl-markdown-content :is(p, li) {
   text-wrap: pretty;
 }

@@ -36,8 +36,8 @@ export default defineConfig({
       locales: { root: { label: 'Português', lang: 'pt-BR' } },
       logo: { src: './src/assets/marca.svg', alt: '' },
       customCss: [
-        '@fontsource-variable/geist',
-        '@fontsource-variable/geist-mono',
+        '@fontsource-variable/source-sans-3',
+        '@fontsource-variable/source-serif-4',
         './src/styles/tema.css',
         './src/styles/legislacao.css',
         './src/styles/inicio.css',

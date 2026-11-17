@@ -1,21 +1,29 @@
 ---
-// Seções da página inicial: capítulos do manual, legislação e o aviso de uso.
+// Seções da página inicial, na ordem em que o leitor costuma precisar:
+// 1) ir direto à sua situação; 2) estudar pelo manual; 3) consultar a lei; 4) entender como ler.
 import { getCollection } from 'astro:content';
-import artigos from '../data/artigos.json';
 import legislacao from '../data/legislacao.json';
 
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 const url = (p: string) => base + p;
-const fmt = (n: number) => n.toLocaleString('pt-BR');
 
-const capitulos = (await getCollection('docs', (e) => e.id.startsWith('manual/') && e.id !== 'manual'))
+// Situações mais procuradas, cada uma levando ao trecho exato do capítulo.
+const situacoes = [
+  { titulo: 'Vendo para a Zona Franca de Manaus a partir de outra região', texto: 'Alíquota zero na venda e o que muda para quem compra.', link: '/manual/zona-franca-de-manaus/#alíquota-zero-na-venda-para-a-zfm' },
+  { titulo: 'Importo mercadoria para revender na ZFM', texto: 'Crédito presumido de IBS na importação para revenda.', link: '/manual/zona-franca-de-manaus/#crédito-presumido-de-ibs-na-importação-para-revenda' },
+  { titulo: 'Sou indústria incentivada na ZFM', texto: 'Créditos presumidos de IBS e de CBS na saída dos produtos.', link: '/manual/zona-franca-de-manaus/#crédito-presumido-na-saída-da-indústria-incentivada' },
+  { titulo: 'Preciso me habilitar na Suframa', texto: 'Quem pode usar o regime e o que a habilitação exige.', link: '/manual/zona-franca-de-manaus/#habilitação-na-suframa' },
+  { titulo: 'Opero em uma Área de Livre Comércio', texto: 'Boa Vista, Bonfim, Tabatinga e as demais: o que vale no IBS e na CBS.', link: '/manual/areas-de-livre-comercio/#benefícios-do-ibs-e-da-cbs' },
+  { titulo: 'Quero saber o que muda em cada ano', texto: 'O calendário da transição de 2026 a 2033.', link: '/manual/visao-geral/#cronograma-de-transição-2026-a-2033' },
+];
+
+const capitulos = (await getCollection('docs', (e) => e.id.startsWith('manual/')))
   .filter((e) => (e.data.sidebar?.order ?? 0) > 0)
   .sort((a, b) => (a.data.sidebar?.order ?? 0) - (b.data.sidebar?.order ?? 0));
-
 const PARTES = [
-  { nome: 'Fundamentos', de: 1, ate: 5 },
-  { nome: 'Zona Franca de Manaus', de: 6, ate: 7 },
-  { nome: 'Áreas de Livre Comércio e estados', de: 8, ate: 10 },
+  { nome: 'Os fundamentos', texto: 'Como o IBS e a CBS funcionam em todo o país: incidência, cálculo, créditos, pagamento e administração.', de: 1, ate: 5 },
+  { nome: 'A Zona Franca de Manaus', texto: 'O regime favorecido da ZFM e seus efeitos no IPI, no Imposto Seletivo e nos fundos.', de: 6, ate: 7 },
+  { nome: 'Áreas de Livre Comércio e estados', texto: 'As ALC e as regras próprias de Roraima e do Amazonas.', de: 8, ate: 10 },
 ];
 const partes = PARTES.map((p) => ({
   ...p,
@@ -26,111 +34,110 @@ const partes = PARTES.map((p) => ({
 }));
 
 const GRUPOS: Record<string, string> = {
-  federal: 'Legislação federal',
-  'zfm-alc': 'Zona Franca e Áreas de Livre Comércio',
+  federal: 'Constituição e leis federais',
   cgibs: 'Comitê Gestor do IBS',
+  'zfm-alc': 'Zona Franca e Áreas de Livre Comércio',
   amazonas: 'Amazonas',
   roraima: 'Roraima',
 };
-const qtd = (id: string) => Object.keys((artigos as Record<string, object>)[id] || {}).length;
-const grupos = Object.entries(GRUPOS)
-  .map(([id, nome]) => ({ id, nome, normas: legislacao.filter((n) => n.grupo === id) }))
-  .filter((g) => g.normas.length);
-const [federal, zfm, ...demais] = grupos;
-const seta = '<svg class="m-arrow" aria-hidden="true" viewBox="0 0 20 20" width="16" height="16"><path d="M4 10h11m-4-5 5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>';
-const rotulo = (r: string) => r.replace(/\s*\(([^)]*)\)\s*$/, '');
+const grupo = (id: string) => ({ id, nome: GRUPOS[id], normas: legislacao.filter((n) => n.grupo === id) });
+// Primeira linha: federal, Comitê Gestor e estados; a ZFM (a maior) vem em linha própria, em colunas.
+const colunas = [[grupo('federal')], [grupo('cgibs')], [grupo('amazonas'), grupo('roraima')]];
+const zfm = grupo('zfm-alc');
+const nome = (r: string) => r.replace(/\s*\(([^)]*)\)\s*$/, '');
 const nota = (r: string) => (r.match(/\(([^)]*)\)\s*$/) || [])[1] || '';
 ---
 
 <div class="inicio not-content">
-  <section class="inicio-secao" aria-labelledby="sec-manual">
+  <section class="inicio-secao" aria-labelledby="sec-situacoes">
     <div class="inicio-wrap">
-      <div class="inicio-cabeca">
-        <h2 id="sec-manual">Dez capítulos do manual</h2>
-        <p>Do básico do IBS e da CBS aos regimes da ZFM, das Áreas de Livre Comércio e dos estados. Cada regra traz o artigo que a sustenta.</p>
-      </div>
+      <h2 id="sec-situacoes">Comece pela sua situação</h2>
+      <p class="inicio-intro">As dúvidas mais comuns, cada uma levando direto ao trecho do manual que responde.</p>
+      <ul class="situacoes">
+        {situacoes.map((s) => (
+          <li>
+            <a class="cartao" href={url(s.link)}>
+              <span class="cartao-titulo">{s.titulo}</span>
+              <span class="cartao-texto">{s.texto}</span>
+            </a>
+          </li>
+        ))}
+      </ul>
+    </div>
+  </section>
+
+  <section class="inicio-secao inicio-secao-alt" aria-labelledby="sec-manual">
+    <div class="inicio-wrap">
+      <h2 id="sec-manual">O manual em três partes</h2>
+      <p class="inicio-intro">Para estudar o tema do começo. Comece pelos fundamentos se a reforma ainda é novidade; vá direto às partes regionais se já conhece a base.</p>
       <div class="partes">
         {partes.map((p) => (
           <div class="parte">
             <h3>{p.nome}</h3>
-            <ol class="linhas">
-              {p.itens.map((c) => (
-                <li>
-                  <a class="cartao" href={url(`/${c.id}/`)}>
-                    <span class="cartao-num">{String(c.data.sidebar?.order).padStart(2, '0')}</span>
-                    <span class="cartao-corpo">
-                      <span class="cartao-titulo">{c.data.title}<Fragment set:html={seta} /></span>
-                      <span class="cartao-texto">{c.data.description}</span>
-                    </span>
-                  </a>
-                </li>
-              ))}
-            </ol>
-          </div>
-        ))}
-      </div>
-    </div>
-  </section>
-
-  <section class="inicio-secao inicio-secao-alt" aria-labelledby="sec-lei">
-    <div class="inicio-wrap">
-      <div class="inicio-cabeca">
-        <h2 id="sec-lei">Legislação na íntegra</h2>
-        <p>Texto compilado das publicações oficiais, sem as redações revogadas. O número ao lado de cada norma é a quantidade de artigos com âncora própria.</p>
-      </div>
-      <div class="normas">
-        {[federal, zfm].map((g) => (
-          <div class="grupo">
-            <h3>{g.nome}</h3>
-            <ul class="normas-lista">
-              {g.normas.map((n) => (
-                <li>
-                  <a href={url(n.link)}>
-                    <span class="norma-nome">{rotulo(n.rotulo)}</span>
-                    {nota(n.rotulo) && <span class="norma-nota">{nota(n.rotulo)}</span>}
-                    <span class="norma-qtd">{fmt(qtd(n.id))}</span>
-                  </a>
-                </li>
-              ))}
+            <p>{p.texto}</p>
+            <ul>
+              {p.itens.map((c) => <li><a href={url(`/${c.id}/`)}>{c.data.title}</a></li>)}
             </ul>
           </div>
         ))}
-        <div class="grupo">
-          {demais.map((g) => (
-            <>
-              <h3>{g.nome}</h3>
-              <ul class="normas-lista">
-                {g.normas.map((n) => (
-                  <li>
-                    <a href={url(n.link)}>
-                      <span class="norma-nome">{rotulo(n.rotulo)}</span>
-                      {nota(n.rotulo) && <span class="norma-nota">{nota(n.rotulo)}</span>}
-                      <span class="norma-qtd">{fmt(qtd(n.id))}</span>
-                    </a>
-                  </li>
-                ))}
-              </ul>
-            </>
-          ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="inicio-secao" aria-labelledby="sec-lei">
+    <div class="inicio-wrap">
+      <h2 id="sec-lei">A legislação completa</h2>
+      <p class="inicio-intro">Todas as normas citadas no manual, no texto oficial e atualizado até a data de captura, com link direto para cada artigo.</p>
+      <div class="normas">
+        {colunas.map((col) => (
+          <div>
+            {col.map((g) => (
+              <div class="grupo">
+                <h3>{g.nome}</h3>
+                <ul>
+                  {g.normas.map((n) => (
+                    <li>
+                      <a href={url(n.link)}>{nome(n.rotulo)}</a>
+                      {nota(n.rotulo) && <span>{nota(n.rotulo)}</span>}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+        ))}
+        <div class="grupo grupo-largo">
+          <h3>{zfm.nome}</h3>
+          <ul>
+            {zfm.normas.map((n) => (
+              <li>
+                <a href={url(n.link)}>{nome(n.rotulo)}</a>
+                {nota(n.rotulo) && <span>{nota(n.rotulo)}</span>}
+              </li>
+            ))}
+          </ul>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="inicio-secao inicio-fecho" aria-labelledby="sec-uso">
-    <div class="inicio-wrap fecho-grade">
-      <div>
-        <h2 id="sec-uso">Material de consulta, não parecer</h2>
-        <p>O texto legal é reproduzido das publicações oficiais e pode ter mudado depois da data de captura indicada em cada norma. Para decisão fiscal, confira sempre a fonte oficial.</p>
-        <div class="inicio-acoes">
-          <a class="btn btn-secundario" href={url('/fontes/')}><span>Ver as fontes e datas</span><Fragment set:html={seta} /></a>
+  <section class="inicio-secao inicio-secao-alt" aria-labelledby="sec-ler">
+    <div class="inicio-wrap">
+      <h2 id="sec-ler">Como ler este manual</h2>
+      <div class="ler">
+        <div>
+          <h3>Cada regra cita a lei</h3>
+          <p>A referência no texto, como “art. 444 da LC 214/2025”, abre o artigo exato. Dentro da lei, clique no número do artigo para copiar o link dele.</p>
+        </div>
+        <div>
+          <h3>Os avisos merecem atenção</h3>
+          <p>Os quadros em amarelo indicam quando lei e regulamento divergem, quando falta um ato oficial ou quando o texto admite mais de uma leitura.</p>
+        </div>
+        <div>
+          <h3>Material de consulta</h3>
+          <p>O texto legal vem das publicações oficiais e pode ter mudado depois da data de captura. Para uma decisão fiscal, confira a fonte. <a href={url('/fontes/')}>Ver fontes e datas</a>.</p>
         </div>
       </div>
-      <dl class="fecho-dicas">
-        <div><dt><kbd>Ctrl</kbd> <kbd>K</kbd></dt><dd>Busca em todo o manual e em toda a legislação.</dd></div>
-        <div><dt>Art. 444.</dt><dd>Clique no rótulo de um artigo para ter o link direto para ele.</dd></div>
-        <div><dt>Atenção</dt><dd>Os avisos marcam divergência entre lei e regulamento, ato ainda não publicado ou texto com mais de uma leitura.</dd></div>
-      </dl>
     </div>
   </section>
 </div>
