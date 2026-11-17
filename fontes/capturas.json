@@ -1,0 +1,158 @@
+{
+  "cf-1988": {
+    "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm",
+    "capturadoEm": "2026-11-17T12:52:04.445Z",
+    "bytes": 1847715,
+    "sha256": "22ca70ffbd3a96ac165d7b1f863417ade98cf2f5f08d6811bbd528546e4af6b6"
+  },
+  "ec-132-2023": {
+    "url": "https://www.planalto.gov.br/ccivil_03/constituicao/emendas/emc/emc132.htm",
+    "capturadoEm": "2026-11-17T12:52:05.925Z",
+    "bytes": 510399,
+    "sha256": "8847554382f0cb1e5f9ec5109690e7ddbc7f344d09b74f0306b68ec6a8502455"
+  },
+  "lc-214-2025": {
+    "url": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp214.htm",
+    "capturadoEm": "2026-11-17T12:52:20.099Z",
+    "bytes": 5403923,
+    "sha256": "c5ecf557965ccc7a915d174546340854d3005a5a6f5b60ca0d6fe50441dd4b46"
+  },
+  "lc-227-2026": {
+    "url": "https://www.planalto.gov.br/ccivil_03/leis/lcp/Lcp227.htm",
+    "capturadoEm": "2026-11-17T12:52:23.597Z",
+    "bytes": 1334008,
+    "sha256": "00a8ab7e28a8c446af245e1946bf328c541c1aee7321ae5924f92055932aecc4"
+  },
+  "decreto-12955-2026": {
+    "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2026/decreto/d12955.htm",
+    "capturadoEm": "2026-11-17T12:52:28.875Z",
+    "bytes": 3184515,
+    "sha256": "16d71c60ec0721d6cda7f0e81a87e42d4b9e1ca92bd18e07f671898b76de8585"
+  },
+  "dl-288-1967": {
+    "url": "https://www.planalto.gov.br/ccivil_03/decreto-lei/del0288.htm",
+    "capturadoEm": "2026-11-17T12:52:29.277Z",
+    "bytes": 66611,
+    "sha256": "e697f5f52148afbbfb686cf25f28788bc359b43bb373456b81c56ebd16d18fe2"
+  },
+  "dl-356-1968": {
+    "url": "https://www.planalto.gov.br/ccivil_03/decreto-lei/del0356.htm",
+    "capturadoEm": "2026-11-17T13:03:42.708Z",
+    "bytes": 12233,
+    "sha256": "ed0213b34b4dfde75081626cb2fe44c65e4afbe7182d1f1e8d5f463cca50eb84"
+  },
+  "dec-61244-1967": {
+    "url": "https://www.planalto.gov.br/ccivil_03/decreto/antigos/d61244.htm",
+    "capturadoEm": "2026-11-17T13:03:43.091Z",
+    "bytes": 65464,
+    "sha256": "2bf8ec151328cad540afff4111f6c44d26934b2ad525895b6a996af68ffd7b07"
+  },
+  "dl-1435-1975": {
+    "url": "https://www.planalto.gov.br/ccivil_03/decreto-lei/del1435.htm",
+    "capturadoEm": "2026-11-17T13:03:43.250Z",
+    "bytes": 13526,
+    "sha256": "b7edc9e30444e0c44ca5d2bc95c3fce288083573f93c18ff644c9cfce1f5f1a0"
+  },
+  "lei-8387-1991": {
+    "url": "https://www.planalto.gov.br/ccivil_03/leis/l8387.htm",
+    "capturadoEm": "2026-11-17T13:03:43.687Z",
+    "bytes": 117254,
+    "sha256": "dd6bcbd26d095a58d1c0514390922b38fbf1fcceec529a949706b5d142893f90"
+  },
+  "dec-10521-2020": {
+    "url": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2020/decreto/D10521.htm",
+    "capturadoEm": "2026-11-17T13:03:44.477Z",
+    "bytes": 141556,
+    "sha256": "2eb46b8a15d453e1850102b0f6d3826c133b8bb3eda4e0e2fdb896291533840a"
+  },
+  "ec-42-2003": {
+    "url": "https://www.planalto.gov.br/ccivil_03/constituicao/emendas/emc/emc42.htm",
+    "capturadoEm": "2026-11-17T13:03:44.701Z",
+    "bytes": 26825,
+    "sha256": "72e2e1efffb9df3d9f5eb07cf46461facea1ca2465b4bacfb5b06c12291dfe1e"
+  },
+  "ec-83-2014": {
+    "url": "https://www.planalto.gov.br/ccivil_03/constituicao/emendas/emc/emc83.htm",
+    "capturadoEm": "2026-11-17T13:03:44.786Z",
+    "bytes": 6225,
+    "sha256": "e542c84a269ef74d38185fc6c156dae8aabbc3d94ac71802b135d300d9d31abd"
+  },
+  "lei-7965-1989": {
+    "url": "https://www.planalto.gov.br/ccivil_03/leis/l7965.htm",
+    "capturadoEm": "2026-11-17T13:03:44.966Z",
+    "bytes": 16955,
+    "sha256": "b506e1d73770b7e991406e05849cbdea739768ec5e485a9cf64bd38bb3442771"
+  },
+  "lei-8210-1991": {
+    "url": "https://www.planalto.gov.br/ccivil_03/leis/1989_1994/l8210.htm",
+    "capturadoEm": "2026-11-17T13:03:45.109Z",
+    "bytes": 20178,
+    "sha256": "fff0d32ea82b0db244723bd4e87073a455581f0bca938cc51860332a90247776"
+  },
+  "lei-8256-1991": {
+    "url": "https://www.planalto.gov.br/ccivil_03/leis/1989_1994/l8256.htm",
+    "capturadoEm": "2026-11-17T13:03:45.393Z",
+    "bytes": 43710,
+    "sha256": "cf8e7ff211dd801ee333367fac93b9668e3e0bd88feed088f24c8dcc2ca1d10c"
+  },
+  "lei-8857-1994": {
+    "url": "https://www.planalto.gov.br/ccivil_03/leis/1989_1994/l8857.htm",
+    "capturadoEm": "2026-11-17T13:03:45.552Z",
+    "bytes": 18166,
+    "sha256": "3cf668eab869db7835b99d9bc1549f382aea1893a61092700b59965dd153dcff"
+  },
+  "lei-11732-2008": {
+    "url": "https://www.planalto.gov.br/ccivil_03/_ato2007-2010/2008/lei/l11732.htm",
+    "capturadoEm": "2026-11-17T13:03:45.863Z",
+    "bytes": 55083,
+    "sha256": "b110fc307535031b347b8079c4b3437935be0d42cf7c35ed205e8dc9dfc0014f"
+  },
+  "dec-6614-2008": {
+    "url": "https://www.planalto.gov.br/ccivil_03/_ato2007-2010/2008/decreto/d6614.htm",
+    "capturadoEm": "2026-11-17T13:03:46.085Z",
+    "bytes": 43235,
+    "sha256": "7237b61036f64bf695d2459b50f4d9998dda0881345789cb898c013bfa38e98c"
+  },
+  "lei-15273-2025": {
+    "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/lei/l15273.htm",
+    "capturadoEm": "2026-11-17T13:03:46.228Z",
+    "bytes": 15028,
+    "sha256": "2b29a1e0b1fc52ad83f45c1d177d737b7c6f71e6331f60be9ebafe90f69b6248"
+  },
+  "res-cgibs-6-2026": {
+    "url": "https://www.cgibs.gov.br/upload/arquivos/202604/30084927-res-cgibs-n-6-30-abr-2026-regulamenta-o-ibs.pdf",
+    "capturadoEm": "2026-11-17T13:06:03.258Z",
+    "bytes": 2896452,
+    "sha256": "9ed7032ef9c25bbee51bdb5e90f60e1ad01a2bf56cb41a28221c3db7f61d419a"
+  },
+  "res-cgibs-13-2026": {
+    "url": "https://www.cgibs.gov.br/upload/arquivos/202607/22121010-resolucao-cgibs-n-13-de-22-de-julho-de-2026.pdf",
+    "capturadoEm": "2026-11-17T13:06:05.007Z",
+    "bytes": 481153,
+    "sha256": "527f5b01b2c8effd984c0334ab1c3068d3926f4f77f90d023211758ee67f7222"
+  },
+  "rr-lei-025-1992": {
+    "url": "https://www.sefaz.rr.gov.br/downloads/legislacao?file=05%20-%20AREAS%20DE%20LIVRE%20COMERCIO%2F2%20-%20LEGISLA%20O%20ESTADUAL%2FLei%20n%20025%20de%2021.12.92%20-%20concess%20o%20de%20incentivos%20fiscais%20nas%20reas%20de%20livre%20com%20rcio%20de%20Bonfim%20e%20Boa%20Vista%20Atualizado%20Dezembro%202025.pdf",
+    "capturadoEm": "2026-11-17T13:06:05.562Z",
+    "bytes": 235810,
+    "sha256": "77f11e4e6cb1bd39e55e8a5ca8db450030477cbadec79aad6e32905b5678d841"
+  },
+  "am-lei-2826-2003": {
+    "url": "https://sistemas.sefaz.am.gov.br/get/Normas.do?metodo=viewDoc&uuidDoc=86b92eb5-3220-422e-98ff-c84c39569974",
+    "capturadoEm": "2026-11-17T13:10:06.849Z",
+    "bytes": 1340990,
+    "sha256": "9fe1a9e412016f5ec7820defe4b203e81fc27ed2de1ec75e9e075b504513fdb1"
+  },
+  "am-dec-47727-2023": {
+    "url": "https://sistemas.sefaz.am.gov.br/get/Normas.do?metodo=viewDoc&uuidDoc=c4fa0162-c63e-47ed-8fc6-fe61309ddc15",
+    "capturadoEm": "2026-11-17T13:10:07.733Z",
+    "bytes": 935304,
+    "sha256": "43aed3dbf476c9cba8748588ad40b57d58b4ffb299908b8c025669070f37593a"
+  },
+  "am-dec-53496-2026": {
+    "url": "https://sistemas.sefaz.am.gov.br/get/Normas.do?metodo=viewDoc&uuidDoc=777a28b3-f4a1-4914-946e-ce0bce0ca68b",
+    "capturadoEm": "2026-11-17T13:10:08.251Z",
+    "bytes": 122535,
+    "sha256": "aa5216046e3a729a191c17fe985c2ade8d84abb7b10aaf135e775a5b2fac4975"
+  }
+}

@@ -1,0 +1,271 @@
+[
+  {
+    "id": "cf-1988",
+    "titulo": "Constituição da República Federativa do Brasil de 1988",
+    "rotulo": "Constituição Federal",
+    "grupo": "federal",
+    "ordem": 1,
+    "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm",
+    "formato": "html",
+    "divisao": "titulo",
+    "ignorarAte": "^Texto compilado$"
+  },
+  {
+    "id": "ec-132-2023",
+    "titulo": "Emenda Constitucional nº 132, de 20 de dezembro de 2023",
+    "rotulo": "EC 132/2023 (Reforma Tributária)",
+    "grupo": "federal",
+    "ordem": 2,
+    "url": "https://www.planalto.gov.br/ccivil_03/constituicao/emendas/emc/emc132.htm",
+    "formato": "html",
+    "divisao": "unica"
+  },
+  {
+    "id": "lc-214-2025",
+    "titulo": "Lei Complementar nº 214, de 16 de janeiro de 2025",
+    "rotulo": "LC 214/2025 (IBS, CBS e IS)",
+    "grupo": "federal",
+    "ordem": 3,
+    "url": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp214.htm",
+    "formato": "html",
+    "divisao": "titulo"
+  },
+  {
+    "id": "lc-227-2026",
+    "titulo": "Lei Complementar nº 227, de 2026",
+    "rotulo": "LC 227/2026 (Comitê Gestor do IBS)",
+    "grupo": "federal",
+    "ordem": 4,
+    "url": "https://www.planalto.gov.br/ccivil_03/leis/lcp/Lcp227.htm",
+    "formato": "html",
+    "divisao": "titulo"
+  },
+  {
+    "id": "decreto-12955-2026",
+    "titulo": "Decreto nº 12.955, de 29 de abril de 2026",
+    "rotulo": "Decreto 12.955/2026 (Regulamento da CBS)",
+    "grupo": "federal",
+    "ordem": 5,
+    "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2026/decreto/d12955.htm",
+    "formato": "html",
+    "divisao": "titulo"
+  },
+  {
+    "id": "dl-288-1967",
+    "titulo": "Decreto-Lei nº 288, de 28 de fevereiro de 1967",
+    "rotulo": "DL 288/1967 (cria a ZFM)",
+    "grupo": "zfm-alc",
+    "ordem": 1,
+    "url": "https://www.planalto.gov.br/ccivil_03/decreto-lei/del0288.htm",
+    "formato": "html",
+    "divisao": "unica"
+  },
+  {
+    "id": "dl-356-1968",
+    "titulo": "Decreto-Lei nº 356, de 15 de agosto de 1968",
+    "rotulo": "DL 356/1968 (Amazônia Ocidental)",
+    "grupo": "zfm-alc",
+    "ordem": 2,
+    "url": "https://www.planalto.gov.br/ccivil_03/decreto-lei/del0356.htm",
+    "formato": "html",
+    "divisao": "unica"
+  },
+  {
+    "id": "dec-61244-1967",
+    "titulo": "Decreto nº 61.244, de 28 de agosto de 1967",
+    "rotulo": "Decreto 61.244/1967 (regulamento do DL 288)",
+    "grupo": "zfm-alc",
+    "ordem": 3,
+    "url": "https://www.planalto.gov.br/ccivil_03/decreto/antigos/d61244.htm",
+    "formato": "html",
+    "divisao": "unica"
+  },
+  {
+    "id": "dl-1435-1975",
+    "titulo": "Decreto-Lei nº 1.435, de 16 de dezembro de 1975",
+    "rotulo": "DL 1.435/1975",
+    "grupo": "zfm-alc",
+    "ordem": 4,
+    "url": "https://www.planalto.gov.br/ccivil_03/decreto-lei/del1435.htm",
+    "formato": "html",
+    "divisao": "unica"
+  },
+  {
+    "id": "lei-8387-1991",
+    "titulo": "Lei nº 8.387, de 30 de dezembro de 1991",
+    "rotulo": "Lei 8.387/1991 (ZFM, informática e ALC Macapá-Santana)",
+    "grupo": "zfm-alc",
+    "ordem": 5,
+    "url": "https://www.planalto.gov.br/ccivil_03/leis/l8387.htm",
+    "formato": "html",
+    "divisao": "unica"
+  },
+  {
+    "id": "dec-10521-2020",
+    "titulo": "Decreto nº 10.521, de 15 de outubro de 2020",
+    "rotulo": "Decreto 10.521/2020 (bens de informática na ZFM)",
+    "grupo": "zfm-alc",
+    "ordem": 6,
+    "url": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2020/decreto/D10521.htm",
+    "formato": "html",
+    "divisao": "unica"
+  },
+  {
+    "id": "ec-42-2003",
+    "titulo": "Emenda Constitucional nº 42, de 19 de dezembro de 2003",
+    "rotulo": "EC 42/2003 (prorroga a ZFM até 2023)",
+    "grupo": "zfm-alc",
+    "ordem": 7,
+    "url": "https://www.planalto.gov.br/ccivil_03/constituicao/emendas/emc/emc42.htm",
+    "formato": "html",
+    "divisao": "unica"
+  },
+  {
+    "id": "ec-83-2014",
+    "titulo": "Emenda Constitucional nº 83, de 5 de agosto de 2014",
+    "rotulo": "EC 83/2014 (prorroga a ZFM até 2073)",
+    "grupo": "zfm-alc",
+    "ordem": 8,
+    "url": "https://www.planalto.gov.br/ccivil_03/constituicao/emendas/emc/emc83.htm",
+    "formato": "html",
+    "divisao": "unica"
+  },
+  {
+    "id": "lei-7965-1989",
+    "titulo": "Lei nº 7.965, de 22 de dezembro de 1989",
+    "rotulo": "Lei 7.965/1989 (ALC de Tabatinga/AM)",
+    "grupo": "zfm-alc",
+    "ordem": 9,
+    "url": "https://www.planalto.gov.br/ccivil_03/leis/l7965.htm",
+    "formato": "html",
+    "divisao": "unica"
+  },
+  {
+    "id": "lei-8210-1991",
+    "titulo": "Lei nº 8.210, de 19 de julho de 1991",
+    "rotulo": "Lei 8.210/1991 (ALC de Guajará-Mirim/RO)",
+    "grupo": "zfm-alc",
+    "ordem": 10,
+    "url": "https://www.planalto.gov.br/ccivil_03/leis/1989_1994/l8210.htm",
+    "formato": "html",
+    "divisao": "unica"
+  },
+  {
+    "id": "lei-8256-1991",
+    "titulo": "Lei nº 8.256, de 25 de novembro de 1991",
+    "rotulo": "Lei 8.256/1991 (ALC de Boa Vista, Pacaraima e Bonfim/RR)",
+    "grupo": "zfm-alc",
+    "ordem": 11,
+    "url": "https://www.planalto.gov.br/ccivil_03/leis/1989_1994/l8256.htm",
+    "formato": "html",
+    "divisao": "unica"
+  },
+  {
+    "id": "lei-8857-1994",
+    "titulo": "Lei nº 8.857, de 8 de março de 1994",
+    "rotulo": "Lei 8.857/1994 (ALC de Brasiléia e Cruzeiro do Sul/AC)",
+    "grupo": "zfm-alc",
+    "ordem": 12,
+    "url": "https://www.planalto.gov.br/ccivil_03/leis/1989_1994/l8857.htm",
+    "formato": "html",
+    "divisao": "unica"
+  },
+  {
+    "id": "lei-11732-2008",
+    "titulo": "Lei nº 11.732, de 30 de junho de 2008",
+    "rotulo": "Lei 11.732/2008 (ALC de Boa Vista e Bonfim/RR)",
+    "grupo": "zfm-alc",
+    "ordem": 13,
+    "url": "https://www.planalto.gov.br/ccivil_03/_ato2007-2010/2008/lei/l11732.htm",
+    "formato": "html",
+    "divisao": "unica"
+  },
+  {
+    "id": "dec-6614-2008",
+    "titulo": "Decreto nº 6.614, de 23 de outubro de 2008",
+    "rotulo": "Decreto 6.614/2008 (regulamenta as ALC de RR)",
+    "grupo": "zfm-alc",
+    "ordem": 14,
+    "url": "https://www.planalto.gov.br/ccivil_03/_ato2007-2010/2008/decreto/d6614.htm",
+    "formato": "html",
+    "divisao": "unica"
+  },
+  {
+    "id": "lei-15273-2025",
+    "titulo": "Lei nº 15.273, de 26 de novembro de 2025",
+    "rotulo": "Lei 15.273/2025 (inclui Pacaraima na ALC de Boa Vista)",
+    "grupo": "zfm-alc",
+    "ordem": 15,
+    "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/lei/l15273.htm",
+    "formato": "html",
+    "divisao": "unica"
+  },
+  {
+    "id": "res-cgibs-6-2026",
+    "titulo": "Resolução CGIBS nº 6, de 30 de abril de 2026",
+    "rotulo": "Resolução 6/2026 (Regulamento do IBS)",
+    "grupo": "cgibs",
+    "ordem": 1,
+    "url": "https://www.cgibs.gov.br/upload/arquivos/202604/30084927-res-cgibs-n-6-30-abr-2026-regulamenta-o-ibs.pdf",
+    "formato": "pdf",
+    "divisao": "titulo",
+    "aviso": "Texto original publicado pelo Comitê Gestor. A Resolução CGIBS nº 13/2026 alterou este regulamento; confira as alterações na própria Resolução 13."
+  },
+  {
+    "id": "res-cgibs-13-2026",
+    "titulo": "Resolução CGIBS nº 13, de 22 de julho de 2026",
+    "rotulo": "Resolução 13/2026 (altera o Regulamento do IBS)",
+    "grupo": "cgibs",
+    "ordem": 2,
+    "url": "https://www.cgibs.gov.br/upload/arquivos/202607/22121010-resolucao-cgibs-n-13-de-22-de-julho-de-2026.pdf",
+    "formato": "pdf",
+    "divisao": "unica"
+  },
+  {
+    "id": "rr-lei-025-1992",
+    "titulo": "Lei nº 025, de 21 de dezembro de 1992 (Roraima)",
+    "rotulo": "Lei 025/1992 (incentivos nas ALC de RR)",
+    "grupo": "roraima",
+    "ordem": 1,
+    "url": "https://www.sefaz.rr.gov.br/downloads/legislacao?file=05%20-%20AREAS%20DE%20LIVRE%20COMERCIO%2F2%20-%20LEGISLA%20O%20ESTADUAL%2FLei%20n%20025%20de%2021.12.92%20-%20concess%20o%20de%20incentivos%20fiscais%20nas%20reas%20de%20livre%20com%20rcio%20de%20Bonfim%20e%20Boa%20Vista%20Atualizado%20Dezembro%202025.pdf",
+    "formato": "pdf",
+    "divisao": "unica",
+    "aviso": "Texto atualizado publicado pela SEFAZ-RR (dezembro de 2025)."
+  },
+  {
+    "id": "am-lei-2826-2003",
+    "titulo": "Lei nº 2.826, de 29 de setembro de 2003 (Amazonas)",
+    "rotulo": "Lei 2.826/2003 (Política Estadual de Incentivos)",
+    "grupo": "amazonas",
+    "ordem": 1,
+    "url": "https://sistemas.sefaz.am.gov.br/get/Normas.do?metodo=viewDoc&uuidDoc=86b92eb5-3220-422e-98ff-c84c39569974",
+    "formato": "html",
+    "divisao": "unica",
+    "seletor": "#vigente div.documento",
+    "aviso": "Texto vigente publicado no SILT da SEFAZ-AM (versão \"vigente\", sem as redações anteriores)."
+  },
+  {
+    "id": "am-dec-47727-2023",
+    "titulo": "Decreto nº 47.727, de 5 de julho de 2023 (Amazonas)",
+    "rotulo": "Decreto 47.727/2023 (regulamento dos incentivos)",
+    "grupo": "amazonas",
+    "ordem": 2,
+    "url": "https://sistemas.sefaz.am.gov.br/get/Normas.do?metodo=viewDoc&uuidDoc=c4fa0162-c63e-47ed-8fc6-fe61309ddc15",
+    "formato": "html",
+    "divisao": "unica",
+    "seletor": "#vigente div.documento",
+    "aviso": "Texto vigente publicado no SILT da SEFAZ-AM (versão \"vigente\", sem as redações anteriores)."
+  },
+  {
+    "id": "am-dec-53496-2026",
+    "titulo": "Decreto nº 53.496, de 6 de fevereiro de 2026 (Amazonas)",
+    "rotulo": "Decreto 53.496/2026 (altera o Decreto 47.727)",
+    "grupo": "amazonas",
+    "ordem": 3,
+    "url": "https://sistemas.sefaz.am.gov.br/get/Normas.do?metodo=viewDoc&uuidDoc=777a28b3-f4a1-4914-946e-ce0bce0ca68b",
+    "formato": "html",
+    "divisao": "unica",
+    "seletor": "#vigente div.documento",
+    "aviso": "Texto vigente publicado no SILT da SEFAZ-AM (versão \"vigente\", sem as redações anteriores)."
+  }
+]

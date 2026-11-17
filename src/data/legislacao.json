@@ -1,0 +1,913 @@
+[
+  {
+    "id": "cf-1988",
+    "grupo": "federal",
+    "ordem": 1,
+    "titulo": "Constituição da República Federativa do Brasil de 1988",
+    "rotulo": "Constituição Federal",
+    "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm",
+    "link": "/legislacao/federal/cf-1988/",
+    "ementa": "",
+    "captura": {
+      "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm",
+      "capturadoEm": "2026-11-17T12:52:04.445Z",
+      "bytes": 1847715,
+      "sha256": "22ca70ffbd3a96ac165d7b1f863417ade98cf2f5f08d6811bbd528546e4af6b6"
+    },
+    "paginas": [
+      {
+        "label": "Título I - Dos Princípios Fundamentais",
+        "link": "/legislacao/federal/cf-1988/titulo-1/"
+      },
+      {
+        "label": "Título II - Dos Direitos e Garantias Fundamentais",
+        "link": "/legislacao/federal/cf-1988/titulo-2/"
+      },
+      {
+        "label": "Título III - Da Organização do Estado",
+        "link": "/legislacao/federal/cf-1988/titulo-3/"
+      },
+      {
+        "label": "Título IV - Da organização dos poderes",
+        "link": "/legislacao/federal/cf-1988/titulo-4/"
+      },
+      {
+        "label": "Título V - Da Defesa do Estado e Das Instituições Democráticas",
+        "link": "/legislacao/federal/cf-1988/titulo-5/"
+      },
+      {
+        "label": "Título VI - Da Tributação e do Orçamento",
+        "link": "/legislacao/federal/cf-1988/titulo-6/"
+      },
+      {
+        "label": "Título VII - Da Ordem Econômica e Financeira",
+        "link": "/legislacao/federal/cf-1988/titulo-7/"
+      },
+      {
+        "label": "Título VIII - Da Ordem Social",
+        "link": "/legislacao/federal/cf-1988/titulo-8/"
+      },
+      {
+        "label": "Título IX - Das Disposições Constitucionais Gerais",
+        "link": "/legislacao/federal/cf-1988/titulo-9/"
+      },
+      {
+        "label": "Ato das Disposições Constitucionais Transitórias",
+        "link": "/legislacao/federal/cf-1988/adct/"
+      }
+    ]
+  },
+  {
+    "id": "ec-132-2023",
+    "grupo": "federal",
+    "ordem": 2,
+    "titulo": "Emenda Constitucional nº 132, de 20 de dezembro de 2023",
+    "rotulo": "EC 132/2023 (Reforma Tributária)",
+    "url": "https://www.planalto.gov.br/ccivil_03/constituicao/emendas/emc/emc132.htm",
+    "link": "/legislacao/federal/ec-132-2023/",
+    "ementa": "",
+    "captura": {
+      "url": "https://www.planalto.gov.br/ccivil_03/constituicao/emendas/emc/emc132.htm",
+      "capturadoEm": "2026-11-17T12:52:05.925Z",
+      "bytes": 510399,
+      "sha256": "8847554382f0cb1e5f9ec5109690e7ddbc7f344d09b74f0306b68ec6a8502455"
+    },
+    "paginas": []
+  },
+  {
+    "id": "lc-214-2025",
+    "grupo": "federal",
+    "ordem": 3,
+    "titulo": "Lei Complementar nº 214, de 16 de janeiro de 2025",
+    "rotulo": "LC 214/2025 (IBS, CBS e IS)",
+    "url": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp214.htm",
+    "link": "/legislacao/federal/lc-214-2025/",
+    "ementa": "Institui o Imposto sobre Bens e Serviços (IBS), a Contribuição Social sobre Bens e Serviços (CBS) e o Imposto Seletivo (IS); cria o Comitê Gestor do IBS e altera a legislação tributária.",
+    "captura": {
+      "url": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp214.htm",
+      "capturadoEm": "2026-11-17T12:52:20.099Z",
+      "bytes": 5403923,
+      "sha256": "c5ecf557965ccc7a915d174546340854d3005a5a6f5b60ca0d6fe50441dd4b46"
+    },
+    "paginas": [
+      {
+        "label": "Livro I · Título I - Das normas gerais do IBS e da CBS",
+        "link": "/legislacao/federal/lc-214-2025/livro-1-titulo-1/"
+      },
+      {
+        "label": "Livro I · Título II - Dos regimes aduaneiros especiais e dos regimes de bagagem, de remessas internacionais e de fornecimento de combustível para aeronaves em tráfego internacional",
+        "link": "/legislacao/federal/lc-214-2025/livro-1-titulo-2/"
+      },
+      {
+        "label": "Livro I · Título III - Da devolução personalizada do IBS e da CBS (cashback) e da Cesta Básica Nacional de Alimentos",
+        "link": "/legislacao/federal/lc-214-2025/livro-1-titulo-3/"
+      },
+      {
+        "label": "Livro I · Título IV - Dos regimes diferenciados do IBS e da CBS",
+        "link": "/legislacao/federal/lc-214-2025/livro-1-titulo-4/"
+      },
+      {
+        "label": "Livro I · Título V - Dos regimes específicos do IBS e da CBS",
+        "link": "/legislacao/federal/lc-214-2025/livro-1-titulo-5/"
+      },
+      {
+        "label": "Livro I · Título VI - Dos regimes diferenciados da CBS",
+        "link": "/legislacao/federal/lc-214-2025/livro-1-titulo-6/"
+      },
+      {
+        "label": "Livro I · Título VII - Da administração do IBS e da CBS",
+        "link": "/legislacao/federal/lc-214-2025/livro-1-titulo-7/"
+      },
+      {
+        "label": "Livro I · Título VIII - Da transição para o IBS e para a CBS",
+        "link": "/legislacao/federal/lc-214-2025/livro-1-titulo-8/"
+      },
+      {
+        "label": "Livro II · Título I - Disposições preliminares",
+        "link": "/legislacao/federal/lc-214-2025/livro-2-titulo-1/"
+      },
+      {
+        "label": "Livro II · Título II - Das normas gerais do Imposto Seletivo",
+        "link": "/legislacao/federal/lc-214-2025/livro-2-titulo-2/"
+      },
+      {
+        "label": "Livro II · Título III - Do Imposto Seletivo sobre importações",
+        "link": "/legislacao/federal/lc-214-2025/livro-2-titulo-3/"
+      },
+      {
+        "label": "Livro II · Título IV - Disposições finais",
+        "link": "/legislacao/federal/lc-214-2025/livro-2-titulo-4/"
+      },
+      {
+        "label": "Livro III · Título I - Da Zona Franca de Manaus, das Áreas de Livre Comércio e da devolução do IBS e da CBS ao turista estrangeiro",
+        "link": "/legislacao/federal/lc-214-2025/livro-3-titulo-1/"
+      },
+      {
+        "label": "Livro III · Título I - Da Zona Franca de Manaus, das Áreas de Livre Comércio, da devolução do IBS e da CBS ao turista estrangeiro, do programa nacional de conformidade tributária e das penalidades administrativas não tributárias relativas ao recolhimento dos tributos na liquidação financeira (split payment)",
+        "link": "/legislacao/federal/lc-214-2025/livro-3-titulo-1-2/"
+      },
+      {
+        "label": "Livro III · Título II - Das compras governamentais",
+        "link": "/legislacao/federal/lc-214-2025/livro-3-titulo-2/"
+      },
+      {
+        "label": "Livro III · Título III - Disposições transitórias",
+        "link": "/legislacao/federal/lc-214-2025/livro-3-titulo-3/"
+      },
+      {
+        "label": "Livro III · Título IV - Disposições finais",
+        "link": "/legislacao/federal/lc-214-2025/livro-3-titulo-4/"
+      },
+      {
+        "label": "Anexo I - Produtos destinados à alimentação humana submetidos à redução a zero das alíquotas do IBS e da CBS",
+        "link": "/legislacao/federal/lc-214-2025/anexo-1/"
+      },
+      {
+        "label": "Anexo II - Serviços de educação submetidos à redução de 60% (sessenta por cento) das alíquotas do IBS e da CBS",
+        "link": "/legislacao/federal/lc-214-2025/anexo-2/"
+      },
+      {
+        "label": "Anexo III - Serviços de saúde submetidos à redução de 60% (sessenta por cento) das alíquotas do IBS e da CBS",
+        "link": "/legislacao/federal/lc-214-2025/anexo-3/"
+      },
+      {
+        "label": "Anexo IV - Dispositivos médicos submetidos à redução de 60% (sessenta por cento) das alíquotas do IBS e da CBS",
+        "link": "/legislacao/federal/lc-214-2025/anexo-4/"
+      },
+      {
+        "label": "Anexo V - Dispositivos de acessibilidade próprios para pessoas com deficiência submetidos à redução de 60% (sessenta por cento) das alíquotas do IBS e da CBS",
+        "link": "/legislacao/federal/lc-214-2025/anexo-5/"
+      },
+      {
+        "label": "Anexo VI - Composições para nutrição enteral ou parenteral e composições especiais e fórmulas nutricionais destinadas às pessoas com erros inatos do metabolismo submetidas à redução de 60% (sessenta por cento) das alíquotas do IBS e da CBS",
+        "link": "/legislacao/federal/lc-214-2025/anexo-6/"
+      },
+      {
+        "label": "Anexo VII - Alimentos destinados ao consumo humano submetidos à redução de 60% (sessenta por cento) das alíquotas do IBS e da CBS",
+        "link": "/legislacao/federal/lc-214-2025/anexo-7/"
+      },
+      {
+        "label": "Anexo VIII - Produtos de higiene pessoal e limpeza majoritariamente consumidos por famílias de baixa renda submetidos à redução de 60% (sessenta por cento) das alíquotas do IBS e da CBS",
+        "link": "/legislacao/federal/lc-214-2025/anexo-8/"
+      },
+      {
+        "label": "Anexo IX - Insumos agropecuários e aquícolas submetidos à redução de 60% (sessenta por cento) das alíquotas do IBS e da CBS",
+        "link": "/legislacao/federal/lc-214-2025/anexo-9/"
+      },
+      {
+        "label": "Anexo X - Produções nacionais artísticas, culturais, de eventos, jornalísticas e audiovisuais submetidas à redução de 60% (sessenta por cento) das alíquotas do IBS e da CBS",
+        "link": "/legislacao/federal/lc-214-2025/anexo-10/"
+      },
+      {
+        "label": "Anexo XI - Bens e serviços relacionados à soberania e à segurança nacional, à segurança da informação e à segurança cibernética submetidos à redução de 60% (sessenta por cento) das alíquotas do IBS e da CBS",
+        "link": "/legislacao/federal/lc-214-2025/anexo-11/"
+      },
+      {
+        "label": "Anexo XII - Dispositivos médicos submetidos à redução a zero das alíquotas do IBS e da CBS",
+        "link": "/legislacao/federal/lc-214-2025/anexo-12/"
+      },
+      {
+        "label": "Anexo XIII - Dispositivos de acessibilidade próprios para pessoas com deficiência submetidos à redução a zero das alíquotas do IBS e da CBS",
+        "link": "/legislacao/federal/lc-214-2025/anexo-13/"
+      },
+      {
+        "label": "Anexo XV - Produtos hortícolas, frutas e ovos submetidos à redução de 100% (cem por cento) das alíquotas do IBS e da CBS",
+        "link": "/legislacao/federal/lc-214-2025/anexo-15/"
+      },
+      {
+        "label": "Anexo XVI - Limite inferior para fixação da alíquota própria em proporção da alíquota de referência",
+        "link": "/legislacao/federal/lc-214-2025/anexo-16/"
+      },
+      {
+        "label": "Anexo XVII - Bens e serviços sujeitos ao Imposto Seletivo",
+        "link": "/legislacao/federal/lc-214-2025/anexo-17/"
+      },
+      {
+        "label": "Anexo XVIII · Anexo I - Alíquotas e Partilha do Simples Nacional - Comércio",
+        "link": "/legislacao/federal/lc-214-2025/anexo-1-2/"
+      },
+      {
+        "label": "Anexo XIX · Anexo II - Alíquotas e Partilha do Simples Nacional - Indústria",
+        "link": "/legislacao/federal/lc-214-2025/anexo-2-2/"
+      },
+      {
+        "label": "Anexo XX · Anexo III - Alíquotas e partilha do Simples Nacional - receitas de locação de bens móveis e de prestação de serviços não relacionados no § 5º-c do art. 18 desta lei complementar",
+        "link": "/legislacao/federal/lc-214-2025/anexo-3-2/"
+      },
+      {
+        "label": "Anexo XXI · Anexo IV - Alíquotas e partilha do Simples Nacional - receitas decorrentes da prestação de serviços relacionados no § 5º-c do art. 18 desta lei complementar",
+        "link": "/legislacao/federal/lc-214-2025/anexo-4-2/"
+      },
+      {
+        "label": "Anexo XXII · Anexo V - Alíquotas e partilha do Simples Nacional - receitas decorrentes da prestação de serviços relacionados no § 5º-i do art. 18 desta lei complementar",
+        "link": "/legislacao/federal/lc-214-2025/anexo-5-2/"
+      },
+      {
+        "label": "Anexo XXIII · Anexo VII - Valores fixos do Microempreendedor Individual (MEI)",
+        "link": "/legislacao/federal/lc-214-2025/anexo-7-2/"
+      }
+    ]
+  },
+  {
+    "id": "lc-227-2026",
+    "grupo": "federal",
+    "ordem": 4,
+    "titulo": "Lei Complementar nº 227, de 2026",
+    "rotulo": "LC 227/2026 (Comitê Gestor do IBS)",
+    "url": "https://www.planalto.gov.br/ccivil_03/leis/lcp/Lcp227.htm",
+    "link": "/legislacao/federal/lc-227-2026/",
+    "ementa": "Institui o Comitê Gestor do Imposto sobre Bens e Serviços (CGIBS); dispõe sobre o processo administrativo tributário do Imposto sobre Bens e Serviços (IBS) e sobre a distribuição do produto da arrecadação do IBS aos entes federativos; institui normais gerais relativas ao Imposto sobre Transmissão Causa mortis e Doação de Quaisquer Bens ou Direitos (ITCMD); altera a Lei nº 5.172, de 25 de outubro de 1966 (Código Tributário Nacional), a Lei nº 1.079, de 10 de abril de 1950, a Lei nº 9.430, de 27 de dezembro de 1996, a Lei nº 10.893, de 13 julho de 2004, a Lei nº 14.113, de 25 de dezembro de 2020, a Lei Complementar nº 63, de 11 de janeiro de 1990, a Lei Complementar nº 87, de 13 de setembro de 1996 (Lei Kandir), a Lei Complementar nº 123, de 14 de dezembro de 2006, a Lei Complementar nº 141, de 13 de janeiro de 2012, a Lei Complementar nº 192, de 11 de março de 2022, a Lei Complementar nº 214, de 16 de janeiro de 2025, o Decreto-Lei nº 37, de 18 de novembro de 1966, e o Decreto nº 70.235, de 6 de março de 1972; e revoga dispositivos da Lei nº 10.833, de 29 de dezembro de 2003, e da Medida Provisória nº 2.158-35, de 24 de agosto de 2001.",
+    "captura": {
+      "url": "https://www.planalto.gov.br/ccivil_03/leis/lcp/Lcp227.htm",
+      "capturadoEm": "2026-11-17T12:52:23.597Z",
+      "bytes": 1334008,
+      "sha256": "00a8ab7e28a8c446af245e1946bf328c541c1aee7321ae5924f92055932aecc4"
+    },
+    "paginas": [
+      {
+        "label": "Livro I · Título I - Do Comitê Gestor do Imposto sobre Bens e Serviços (CGIBS)",
+        "link": "/legislacao/federal/lc-227-2026/livro-1-titulo-1/"
+      },
+      {
+        "label": "Livro I · Título II - Do processo administrativo tributário do IBS",
+        "link": "/legislacao/federal/lc-227-2026/livro-1-titulo-2/"
+      },
+      {
+        "label": "Livro I · Título III - Da distribuição do produto da arrecadação do IBS",
+        "link": "/legislacao/federal/lc-227-2026/livro-1-titulo-3/"
+      },
+      {
+        "label": "Livro I · Título IV - Disposições relativas à transição do ICMS",
+        "link": "/legislacao/federal/lc-227-2026/livro-1-titulo-4/"
+      },
+      {
+        "label": "Livro II · Título I - Disposições gerais",
+        "link": "/legislacao/federal/lc-227-2026/livro-2-titulo-1/"
+      },
+      {
+        "label": "Livro II · Título II - Da fiscalização",
+        "link": "/legislacao/federal/lc-227-2026/livro-2-titulo-2/"
+      },
+      {
+        "label": "Livro II · Título III - Disposições finais",
+        "link": "/legislacao/federal/lc-227-2026/livro-2-titulo-3/"
+      },
+      {
+        "label": "Livro III - Disposições finais",
+        "link": "/legislacao/federal/lc-227-2026/livro-3/"
+      }
+    ]
+  },
+  {
+    "id": "decreto-12955-2026",
+    "grupo": "federal",
+    "ordem": 5,
+    "titulo": "Decreto nº 12.955, de 29 de abril de 2026",
+    "rotulo": "Decreto 12.955/2026 (Regulamento da CBS)",
+    "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2026/decreto/d12955.htm",
+    "link": "/legislacao/federal/decreto-12955-2026/",
+    "ementa": "Regulamenta a Contribuição Social sobre Bens e Serviços – CBS e dá outras providências.",
+    "captura": {
+      "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2026/decreto/d12955.htm",
+      "capturadoEm": "2026-11-17T12:52:28.875Z",
+      "bytes": 3184515,
+      "sha256": "16d71c60ec0721d6cda7f0e81a87e42d4b9e1ca92bd18e07f671898b76de8585"
+    },
+    "paginas": [
+      {
+        "label": "Livro I · Título I - Das normas gerais da Contribuição Social sobre Bens e Serviços",
+        "link": "/legislacao/federal/decreto-12955-2026/livro-1-titulo-1/"
+      },
+      {
+        "label": "Livro I · Título II - Das obrigações acessórias",
+        "link": "/legislacao/federal/decreto-12955-2026/livro-1-titulo-2/"
+      },
+      {
+        "label": "Livro I · Título III - Dos regimes aduaneiros especiais, dos regimes de bagagem e de remessas internacionais, das zonas de processamento de exportação e dos regimes dos bens de capital",
+        "link": "/legislacao/federal/decreto-12955-2026/livro-1-titulo-3/"
+      },
+      {
+        "label": "Livro I · Título IV - Da Cesta Básica Nacional de Alimentos",
+        "link": "/legislacao/federal/decreto-12955-2026/livro-1-titulo-4/"
+      },
+      {
+        "label": "Livro I · Título V - Dos regimes diferenciados da CBS",
+        "link": "/legislacao/federal/decreto-12955-2026/livro-1-titulo-5/"
+      },
+      {
+        "label": "Livro I · Título VI - Dos regimes específicos da CBS",
+        "link": "/legislacao/federal/decreto-12955-2026/livro-1-titulo-6/"
+      },
+      {
+        "label": "Livro I · Título VII - Da Zona Franca de Manaus e das Áreas de Livre Comércio",
+        "link": "/legislacao/federal/decreto-12955-2026/livro-1-titulo-7/"
+      },
+      {
+        "label": "Livro I · Título VIII - Das compras governamentais",
+        "link": "/legislacao/federal/decreto-12955-2026/livro-1-titulo-8/"
+      },
+      {
+        "label": "Livro I · Título IX - Da consulta sobre a aplicação da legislação comum à CBS e ao IBS",
+        "link": "/legislacao/federal/decreto-12955-2026/livro-1-titulo-9/"
+      },
+      {
+        "label": "Livro I · Título X - Da harmonização da CBS e do IBS",
+        "link": "/legislacao/federal/decreto-12955-2026/livro-1-titulo-10/"
+      },
+      {
+        "label": "Livro I · Título XI - Da associação pública",
+        "link": "/legislacao/federal/decreto-12955-2026/livro-1-titulo-11/"
+      },
+      {
+        "label": "Livro I · Título XII - Do período de transição das operações com bens imóveis",
+        "link": "/legislacao/federal/decreto-12955-2026/livro-1-titulo-12/"
+      },
+      {
+        "label": "Livro I · Título XIII - Disposições finais",
+        "link": "/legislacao/federal/decreto-12955-2026/livro-1-titulo-13/"
+      },
+      {
+        "label": "Livro II · Título I - Das alíquotas da CBS",
+        "link": "/legislacao/federal/decreto-12955-2026/livro-2-titulo-1/"
+      },
+      {
+        "label": "Livro II · Título II - Dos percentuais de creditamento presumido da CBS",
+        "link": "/legislacao/federal/decreto-12955-2026/livro-2-titulo-2/"
+      },
+      {
+        "label": "Livro II · Título III - Da devolução e do cancelamento",
+        "link": "/legislacao/federal/decreto-12955-2026/livro-2-titulo-3/"
+      },
+      {
+        "label": "Livro II · Título IV - Da documentação fiscal na importação",
+        "link": "/legislacao/federal/decreto-12955-2026/livro-2-titulo-4/"
+      },
+      {
+        "label": "Livro II · Título V - Do ressarcimento",
+        "link": "/legislacao/federal/decreto-12955-2026/livro-2-titulo-5/"
+      },
+      {
+        "label": "Livro II · Título VI - Do pagamento indevido ou a maior da CBS",
+        "link": "/legislacao/federal/decreto-12955-2026/livro-2-titulo-6/"
+      },
+      {
+        "label": "Livro II · Título VII - Da devolução personalizada da CBS (cashback)",
+        "link": "/legislacao/federal/decreto-12955-2026/livro-2-titulo-7/"
+      },
+      {
+        "label": "Livro II · Título VIII - Dos programas de incentivo à cidadania fiscal",
+        "link": "/legislacao/federal/decreto-12955-2026/livro-2-titulo-8/"
+      },
+      {
+        "label": "Livro II · Título IX - Da devolução da CBS ao turista estrangeiro",
+        "link": "/legislacao/federal/decreto-12955-2026/livro-2-titulo-9/"
+      },
+      {
+        "label": "Livro II · Título X - Dos regimes diferenciados da CBS",
+        "link": "/legislacao/federal/decreto-12955-2026/livro-2-titulo-10/"
+      },
+      {
+        "label": "Livro II · Título XI - Da Zona Franca de Manaus e das Áreas de Livre Comércio",
+        "link": "/legislacao/federal/decreto-12955-2026/livro-2-titulo-11/"
+      },
+      {
+        "label": "Livro II · Título XII - Da administração da CBS",
+        "link": "/legislacao/federal/decreto-12955-2026/livro-2-titulo-12/"
+      },
+      {
+        "label": "Livro II · Título XIII - Da transição para a CBS",
+        "link": "/legislacao/federal/decreto-12955-2026/livro-2-titulo-13/"
+      },
+      {
+        "label": "Livro III - Das disposições finais",
+        "link": "/legislacao/federal/decreto-12955-2026/livro-3/"
+      },
+      {
+        "label": "Anexo I - Taxas anuais de depreciação (art. 48, § 1º)",
+        "link": "/legislacao/federal/decreto-12955-2026/anexo-1/"
+      },
+      {
+        "label": "Anexo II - Repetro (art. 164)",
+        "link": "/legislacao/federal/decreto-12955-2026/anexo-2/"
+      },
+      {
+        "label": "Anexo III - Lista de bens com suspensão do pagamento da CBS no regime diferenciado do Reporto (art. 186, § 5º)",
+        "link": "/legislacao/federal/decreto-12955-2026/anexo-3/"
+      },
+      {
+        "label": "Anexo IV - Lista de bens de capital sujeitos a suspensão do pagamento da CBS nas operações destinadas a contribuinte no regime regular (art. 196)",
+        "link": "/legislacao/federal/decreto-12955-2026/anexo-4/"
+      },
+      {
+        "label": "Anexo V - Lista de bens de capital desonerados nas operações destinadas a não contribuintes (art. 197)",
+        "link": "/legislacao/federal/decreto-12955-2026/anexo-5/"
+      }
+    ]
+  },
+  {
+    "id": "dl-288-1967",
+    "grupo": "zfm-alc",
+    "ordem": 1,
+    "titulo": "Decreto-Lei nº 288, de 28 de fevereiro de 1967",
+    "rotulo": "DL 288/1967 (cria a ZFM)",
+    "url": "https://www.planalto.gov.br/ccivil_03/decreto-lei/del0288.htm",
+    "link": "/legislacao/zfm-alc/dl-288-1967/",
+    "ementa": "(Vide Medida Provisória nº 1.602, de 1997)",
+    "captura": {
+      "url": "https://www.planalto.gov.br/ccivil_03/decreto-lei/del0288.htm",
+      "capturadoEm": "2026-11-17T12:52:29.277Z",
+      "bytes": 66611,
+      "sha256": "e697f5f52148afbbfb686cf25f28788bc359b43bb373456b81c56ebd16d18fe2"
+    },
+    "paginas": []
+  },
+  {
+    "id": "dl-356-1968",
+    "grupo": "zfm-alc",
+    "ordem": 2,
+    "titulo": "Decreto-Lei nº 356, de 15 de agosto de 1968",
+    "rotulo": "DL 356/1968 (Amazônia Ocidental)",
+    "url": "https://www.planalto.gov.br/ccivil_03/decreto-lei/del0356.htm",
+    "link": "/legislacao/zfm-alc/dl-356-1968/",
+    "ementa": "Estende Benefícios do Decreto-Lei número 288, de 28 de fevereiro de 1967, a Áreas da Amazônia Ocidental e dá outras Providências.",
+    "captura": {
+      "url": "https://www.planalto.gov.br/ccivil_03/decreto-lei/del0356.htm",
+      "capturadoEm": "2026-11-17T13:03:42.708Z",
+      "bytes": 12233,
+      "sha256": "ed0213b34b4dfde75081626cb2fe44c65e4afbe7182d1f1e8d5f463cca50eb84"
+    },
+    "paginas": []
+  },
+  {
+    "id": "dec-61244-1967",
+    "grupo": "zfm-alc",
+    "ordem": 3,
+    "titulo": "Decreto nº 61.244, de 28 de agosto de 1967",
+    "rotulo": "Decreto 61.244/1967 (regulamento do DL 288)",
+    "url": "https://www.planalto.gov.br/ccivil_03/decreto/antigos/d61244.htm",
+    "link": "/legislacao/zfm-alc/dec-61244-1967/",
+    "ementa": "Regulamenta o Decreto-Lei nº 288, de 28 de fevereiro de 1967 que altera as disposições da Lei nº 3.173, de 6 de junho de 1957 e cria a Superintendência da Zona Franca de Manaus - SUFRAMA.",
+    "captura": {
+      "url": "https://www.planalto.gov.br/ccivil_03/decreto/antigos/d61244.htm",
+      "capturadoEm": "2026-11-17T13:03:43.091Z",
+      "bytes": 65464,
+      "sha256": "2bf8ec151328cad540afff4111f6c44d26934b2ad525895b6a996af68ffd7b07"
+    },
+    "paginas": []
+  },
+  {
+    "id": "dl-1435-1975",
+    "grupo": "zfm-alc",
+    "ordem": 4,
+    "titulo": "Decreto-Lei nº 1.435, de 16 de dezembro de 1975",
+    "rotulo": "DL 1.435/1975",
+    "url": "https://www.planalto.gov.br/ccivil_03/decreto-lei/del1435.htm",
+    "link": "/legislacao/zfm-alc/dl-1435-1975/",
+    "ementa": "Altera a redação dos artigos 7º do Decreto-lei nº 288, de 28 de fevereiro de 1967, e 2º do Decreto-lei nº 356, de 15 de agosto de 1968, e dá outras providências.",
+    "captura": {
+      "url": "https://www.planalto.gov.br/ccivil_03/decreto-lei/del1435.htm",
+      "capturadoEm": "2026-11-17T13:03:43.250Z",
+      "bytes": 13526,
+      "sha256": "b7edc9e30444e0c44ca5d2bc95c3fce288083573f93c18ff644c9cfce1f5f1a0"
+    },
+    "paginas": []
+  },
+  {
+    "id": "lei-8387-1991",
+    "grupo": "zfm-alc",
+    "ordem": 5,
+    "titulo": "Lei nº 8.387, de 30 de dezembro de 1991",
+    "rotulo": "Lei 8.387/1991 (ZFM, informática e ALC Macapá-Santana)",
+    "url": "https://www.planalto.gov.br/ccivil_03/leis/l8387.htm",
+    "link": "/legislacao/zfm-alc/lei-8387-1991/",
+    "ementa": "Dá nova redação ao § 1° do art. 3° aos arts. 7° e 9° do Decreto-Lei n° 288, de 28 de fevereiro de 1967, ao caput do art. 37 do Decreto-Lei n° 1.455, de 7 de abril de 1976 e ao art. 10 da Lei n° 2.145, de 29 de dezembro de 1953, e dá outras providências.",
+    "captura": {
+      "url": "https://www.planalto.gov.br/ccivil_03/leis/l8387.htm",
+      "capturadoEm": "2026-11-17T13:03:43.687Z",
+      "bytes": 117254,
+      "sha256": "dd6bcbd26d095a58d1c0514390922b38fbf1fcceec529a949706b5d142893f90"
+    },
+    "paginas": []
+  },
+  {
+    "id": "dec-10521-2020",
+    "grupo": "zfm-alc",
+    "ordem": 6,
+    "titulo": "Decreto nº 10.521, de 15 de outubro de 2020",
+    "rotulo": "Decreto 10.521/2020 (bens de informática na ZFM)",
+    "url": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2020/decreto/D10521.htm",
+    "link": "/legislacao/zfm-alc/dec-10521-2020/",
+    "ementa": "Regulamenta o § 6º do art. 7º do Decreto-Lei nº 288, de 28 de fevereiro de 1967, e o art. 2º da Lei nº 8.387, de 30 de dezembro de 1991, que tratam do benefício fiscal concedido às empresas que produzem bens e serviços do setor de tecnologia da informação e de comunicação na Zona Franca de Manaus e que investem em atividades de pesquisa, desenvolvimento e inovação na Amazônia Ocidental ou no Estado do Amapá.",
+    "captura": {
+      "url": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2020/decreto/D10521.htm",
+      "capturadoEm": "2026-11-17T13:03:44.477Z",
+      "bytes": 141556,
+      "sha256": "2eb46b8a15d453e1850102b0f6d3826c133b8bb3eda4e0e2fdb896291533840a"
+    },
+    "paginas": []
+  },
+  {
+    "id": "ec-42-2003",
+    "grupo": "zfm-alc",
+    "ordem": 7,
+    "titulo": "Emenda Constitucional nº 42, de 19 de dezembro de 2003",
+    "rotulo": "EC 42/2003 (prorroga a ZFM até 2023)",
+    "url": "https://www.planalto.gov.br/ccivil_03/constituicao/emendas/emc/emc42.htm",
+    "link": "/legislacao/zfm-alc/ec-42-2003/",
+    "ementa": "Altera o Sistema Tributário Nacional e dá outras providências.",
+    "captura": {
+      "url": "https://www.planalto.gov.br/ccivil_03/constituicao/emendas/emc/emc42.htm",
+      "capturadoEm": "2026-11-17T13:03:44.701Z",
+      "bytes": 26825,
+      "sha256": "72e2e1efffb9df3d9f5eb07cf46461facea1ca2465b4bacfb5b06c12291dfe1e"
+    },
+    "paginas": []
+  },
+  {
+    "id": "ec-83-2014",
+    "grupo": "zfm-alc",
+    "ordem": 8,
+    "titulo": "Emenda Constitucional nº 83, de 5 de agosto de 2014",
+    "rotulo": "EC 83/2014 (prorroga a ZFM até 2073)",
+    "url": "https://www.planalto.gov.br/ccivil_03/constituicao/emendas/emc/emc83.htm",
+    "link": "/legislacao/zfm-alc/ec-83-2014/",
+    "ementa": "Acrescenta o art. 92-A ao Ato das Disposições Constitucionais Transitórias - ADCT.",
+    "captura": {
+      "url": "https://www.planalto.gov.br/ccivil_03/constituicao/emendas/emc/emc83.htm",
+      "capturadoEm": "2026-11-17T13:03:44.786Z",
+      "bytes": 6225,
+      "sha256": "e542c84a269ef74d38185fc6c156dae8aabbc3d94ac71802b135d300d9d31abd"
+    },
+    "paginas": []
+  },
+  {
+    "id": "lei-7965-1989",
+    "grupo": "zfm-alc",
+    "ordem": 9,
+    "titulo": "Lei nº 7.965, de 22 de dezembro de 1989",
+    "rotulo": "Lei 7.965/1989 (ALC de Tabatinga/AM)",
+    "url": "https://www.planalto.gov.br/ccivil_03/leis/l7965.htm",
+    "link": "/legislacao/zfm-alc/lei-7965-1989/",
+    "ementa": "Cria Área de Livre Comércio no Município de Tabatinga, no Estado do Amazonas, e dá outra providências.",
+    "captura": {
+      "url": "https://www.planalto.gov.br/ccivil_03/leis/l7965.htm",
+      "capturadoEm": "2026-11-17T13:03:44.966Z",
+      "bytes": 16955,
+      "sha256": "b506e1d73770b7e991406e05849cbdea739768ec5e485a9cf64bd38bb3442771"
+    },
+    "paginas": []
+  },
+  {
+    "id": "lei-8210-1991",
+    "grupo": "zfm-alc",
+    "ordem": 10,
+    "titulo": "Lei nº 8.210, de 19 de julho de 1991",
+    "rotulo": "Lei 8.210/1991 (ALC de Guajará-Mirim/RO)",
+    "url": "https://www.planalto.gov.br/ccivil_03/leis/1989_1994/l8210.htm",
+    "link": "/legislacao/zfm-alc/lei-8210-1991/",
+    "ementa": "Cria a Área de livre Comércio de Guajará-Mirim, no Estado de Rondônia, e dá outras providências.",
+    "captura": {
+      "url": "https://www.planalto.gov.br/ccivil_03/leis/1989_1994/l8210.htm",
+      "capturadoEm": "2026-11-17T13:03:45.109Z",
+      "bytes": 20178,
+      "sha256": "fff0d32ea82b0db244723bd4e87073a455581f0bca938cc51860332a90247776"
+    },
+    "paginas": []
+  },
+  {
+    "id": "lei-8256-1991",
+    "grupo": "zfm-alc",
+    "ordem": 11,
+    "titulo": "Lei nº 8.256, de 25 de novembro de 1991",
+    "rotulo": "Lei 8.256/1991 (ALC de Boa Vista, Pacaraima e Bonfim/RR)",
+    "url": "https://www.planalto.gov.br/ccivil_03/leis/1989_1994/l8256.htm",
+    "link": "/legislacao/zfm-alc/lei-8256-1991/",
+    "ementa": "Cria áreas de livre comércio nos Municípios de Boa Vista e Pacaraima e de Bonfim, no Estado de Roraima, e dá outras providências. (Redação dada pela Lei nº 15.273, de 2025)",
+    "captura": {
+      "url": "https://www.planalto.gov.br/ccivil_03/leis/1989_1994/l8256.htm",
+      "capturadoEm": "2026-11-17T13:03:45.393Z",
+      "bytes": 43710,
+      "sha256": "cf8e7ff211dd801ee333367fac93b9668e3e0bd88feed088f24c8dcc2ca1d10c"
+    },
+    "paginas": []
+  },
+  {
+    "id": "lei-8857-1994",
+    "grupo": "zfm-alc",
+    "ordem": 12,
+    "titulo": "Lei nº 8.857, de 8 de março de 1994",
+    "rotulo": "Lei 8.857/1994 (ALC de Brasiléia e Cruzeiro do Sul/AC)",
+    "url": "https://www.planalto.gov.br/ccivil_03/leis/1989_1994/l8857.htm",
+    "link": "/legislacao/zfm-alc/lei-8857-1994/",
+    "ementa": "Autoriza a criação de áreas de livre comércio nos Municípios de Brasiléia e Cruzeiro do Sul, no Estado do Acre, e dá outras providências.",
+    "captura": {
+      "url": "https://www.planalto.gov.br/ccivil_03/leis/1989_1994/l8857.htm",
+      "capturadoEm": "2026-11-17T13:03:45.552Z",
+      "bytes": 18166,
+      "sha256": "3cf668eab869db7835b99d9bc1549f382aea1893a61092700b59965dd153dcff"
+    },
+    "paginas": []
+  },
+  {
+    "id": "lei-11732-2008",
+    "grupo": "zfm-alc",
+    "ordem": 13,
+    "titulo": "Lei nº 11.732, de 30 de junho de 2008",
+    "rotulo": "Lei 11.732/2008 (ALC de Boa Vista e Bonfim/RR)",
+    "url": "https://www.planalto.gov.br/ccivil_03/_ato2007-2010/2008/lei/l11732.htm",
+    "link": "/legislacao/zfm-alc/lei-11732-2008/",
+    "ementa": "Altera as Leis nos 11.508, de 20 de julho de 2007, que dispõe sobre o regime tributário, cambial e administrativo das Zonas de Processamento de Exportação, e 8.256, de 25 de novembro de 1991, que cria áreas de livre comércio nos municípios de Boa Vista e Bonfim, no Estado de Roraima; e dá outras providências.",
+    "captura": {
+      "url": "https://www.planalto.gov.br/ccivil_03/_ato2007-2010/2008/lei/l11732.htm",
+      "capturadoEm": "2026-11-17T13:03:45.863Z",
+      "bytes": 55083,
+      "sha256": "b110fc307535031b347b8079c4b3437935be0d42cf7c35ed205e8dc9dfc0014f"
+    },
+    "paginas": []
+  },
+  {
+    "id": "dec-6614-2008",
+    "grupo": "zfm-alc",
+    "ordem": 14,
+    "titulo": "Decreto nº 6.614, de 23 de outubro de 2008",
+    "rotulo": "Decreto 6.614/2008 (regulamenta as ALC de RR)",
+    "url": "https://www.planalto.gov.br/ccivil_03/_ato2007-2010/2008/decreto/d6614.htm",
+    "link": "/legislacao/zfm-alc/dec-6614-2008/",
+    "ementa": "Regulamenta a Lei no 8.256, de 25 de novembro de 1991, que cria áreas de livre comércio nos Municípios de Boa Vista e Bonfim, no Estado de Roraima, e dá outras providências.",
+    "captura": {
+      "url": "https://www.planalto.gov.br/ccivil_03/_ato2007-2010/2008/decreto/d6614.htm",
+      "capturadoEm": "2026-11-17T13:03:46.085Z",
+      "bytes": 43235,
+      "sha256": "7237b61036f64bf695d2459b50f4d9998dda0881345789cb898c013bfa38e98c"
+    },
+    "paginas": []
+  },
+  {
+    "id": "lei-15273-2025",
+    "grupo": "zfm-alc",
+    "ordem": 15,
+    "titulo": "Lei nº 15.273, de 26 de novembro de 2025",
+    "rotulo": "Lei 15.273/2025 (inclui Pacaraima na ALC de Boa Vista)",
+    "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/lei/l15273.htm",
+    "link": "/legislacao/zfm-alc/lei-15273-2025/",
+    "ementa": "Altera a Lei nº 8.256, de 25 de novembro de 1991, para incluir o Município de Pacaraima, no Estado de Roraima, na Área de Livre Comércio de Boa Vista (ALCBV)",
+    "captura": {
+      "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/lei/l15273.htm",
+      "capturadoEm": "2026-11-17T13:03:46.228Z",
+      "bytes": 15028,
+      "sha256": "2b29a1e0b1fc52ad83f45c1d177d737b7c6f71e6331f60be9ebafe90f69b6248"
+    },
+    "paginas": []
+  },
+  {
+    "id": "am-lei-2826-2003",
+    "grupo": "amazonas",
+    "ordem": 1,
+    "titulo": "Lei nº 2.826, de 29 de setembro de 2003 (Amazonas)",
+    "rotulo": "Lei 2.826/2003 (Política Estadual de Incentivos)",
+    "url": "https://sistemas.sefaz.am.gov.br/get/Normas.do?metodo=viewDoc&uuidDoc=86b92eb5-3220-422e-98ff-c84c39569974",
+    "link": "/legislacao/amazonas/am-lei-2826-2003/",
+    "ementa": "Publicada no DOE de 29/09/2003, Poder Executivo, p. 1",
+    "captura": {
+      "url": "https://sistemas.sefaz.am.gov.br/get/Normas.do?metodo=viewDoc&uuidDoc=86b92eb5-3220-422e-98ff-c84c39569974",
+      "capturadoEm": "2026-11-17T13:10:06.849Z",
+      "bytes": 1340990,
+      "sha256": "9fe1a9e412016f5ec7820defe4b203e81fc27ed2de1ec75e9e075b504513fdb1"
+    },
+    "paginas": []
+  },
+  {
+    "id": "am-dec-47727-2023",
+    "grupo": "amazonas",
+    "ordem": 2,
+    "titulo": "Decreto nº 47.727, de 5 de julho de 2023 (Amazonas)",
+    "rotulo": "Decreto 47.727/2023 (regulamento dos incentivos)",
+    "url": "https://sistemas.sefaz.am.gov.br/get/Normas.do?metodo=viewDoc&uuidDoc=c4fa0162-c63e-47ed-8fc6-fe61309ddc15",
+    "link": "/legislacao/amazonas/am-dec-47727-2023/",
+    "ementa": "Publicado no DOE de 05/07/2023, Poder Executivo, p. 3",
+    "captura": {
+      "url": "https://sistemas.sefaz.am.gov.br/get/Normas.do?metodo=viewDoc&uuidDoc=c4fa0162-c63e-47ed-8fc6-fe61309ddc15",
+      "capturadoEm": "2026-11-17T13:10:07.733Z",
+      "bytes": 935304,
+      "sha256": "43aed3dbf476c9cba8748588ad40b57d58b4ffb299908b8c025669070f37593a"
+    },
+    "paginas": []
+  },
+  {
+    "id": "am-dec-53496-2026",
+    "grupo": "amazonas",
+    "ordem": 3,
+    "titulo": "Decreto nº 53.496, de 6 de fevereiro de 2026 (Amazonas)",
+    "rotulo": "Decreto 53.496/2026 (altera o Decreto 47.727)",
+    "url": "https://sistemas.sefaz.am.gov.br/get/Normas.do?metodo=viewDoc&uuidDoc=777a28b3-f4a1-4914-946e-ce0bce0ca68b",
+    "link": "/legislacao/amazonas/am-dec-53496-2026/",
+    "ementa": "Publicado no DOE de 06/02/2026, Poder Executivo, Seção I, p. 8",
+    "captura": {
+      "url": "https://sistemas.sefaz.am.gov.br/get/Normas.do?metodo=viewDoc&uuidDoc=777a28b3-f4a1-4914-946e-ce0bce0ca68b",
+      "capturadoEm": "2026-11-17T13:10:08.251Z",
+      "bytes": 122535,
+      "sha256": "aa5216046e3a729a191c17fe985c2ade8d84abb7b10aaf135e775a5b2fac4975"
+    },
+    "paginas": []
+  },
+  {
+    "id": "rr-lei-025-1992",
+    "grupo": "roraima",
+    "ordem": 1,
+    "titulo": "Lei nº 025, de 21 de dezembro de 1992 (Roraima)",
+    "rotulo": "Lei 025/1992 (incentivos nas ALC de RR)",
+    "url": "https://www.sefaz.rr.gov.br/downloads/legislacao?file=05%20-%20AREAS%20DE%20LIVRE%20COMERCIO%2F2%20-%20LEGISLA%20O%20ESTADUAL%2FLei%20n%20025%20de%2021.12.92%20-%20concess%20o%20de%20incentivos%20fiscais%20nas%20reas%20de%20livre%20com%20rcio%20de%20Bonfim%20e%20Boa%20Vista%20Atualizado%20Dezembro%202025.pdf",
+    "link": "/legislacao/roraima/rr-lei-025-1992/",
+    "ementa": "Alterada pela Lei nº 677 de 15/07/08 Alterada pela Lei nº 682 de 24/09/08 Alterada pela Lei nº 694 de 31/12/08 Alterada pela Lei nº 2.306 de 31/12/25",
+    "captura": {
+      "url": "https://www.sefaz.rr.gov.br/downloads/legislacao?file=05%20-%20AREAS%20DE%20LIVRE%20COMERCIO%2F2%20-%20LEGISLA%20O%20ESTADUAL%2FLei%20n%20025%20de%2021.12.92%20-%20concess%20o%20de%20incentivos%20fiscais%20nas%20reas%20de%20livre%20com%20rcio%20de%20Bonfim%20e%20Boa%20Vista%20Atualizado%20Dezembro%202025.pdf",
+      "capturadoEm": "2026-11-17T13:06:05.562Z",
+      "bytes": 235810,
+      "sha256": "77f11e4e6cb1bd39e55e8a5ca8db450030477cbadec79aad6e32905b5678d841"
+    },
+    "paginas": []
+  },
+  {
+    "id": "res-cgibs-6-2026",
+    "grupo": "cgibs",
+    "ordem": 1,
+    "titulo": "Resolução CGIBS nº 6, de 30 de abril de 2026",
+    "rotulo": "Resolução 6/2026 (Regulamento do IBS)",
+    "url": "https://www.cgibs.gov.br/upload/arquivos/202604/30084927-res-cgibs-n-6-30-abr-2026-regulamenta-o-ibs.pdf",
+    "link": "/legislacao/cgibs/res-cgibs-6-2026/",
+    "ementa": "",
+    "captura": {
+      "url": "https://www.cgibs.gov.br/upload/arquivos/202604/30084927-res-cgibs-n-6-30-abr-2026-regulamenta-o-ibs.pdf",
+      "capturadoEm": "2026-11-17T13:06:03.258Z",
+      "bytes": 2896452,
+      "sha256": "9ed7032ef9c25bbee51bdb5e90f60e1ad01a2bf56cb41a28221c3db7f61d419a"
+    },
+    "paginas": [
+      {
+        "label": "Livro I · Título I - Das normas gerais do IBS",
+        "link": "/legislacao/cgibs/res-cgibs-6-2026/livro-1-titulo-1/"
+      },
+      {
+        "label": "Livro I · Título II - Das obrigações acessórias",
+        "link": "/legislacao/cgibs/res-cgibs-6-2026/livro-1-titulo-2/"
+      },
+      {
+        "label": "Livro I · Título III - Dos regimes aduaneiros especiais, dos regimes de bagagem e de remessas internacionais, das zonas de processamento de exportação e dos regimes dos bens de capital",
+        "link": "/legislacao/cgibs/res-cgibs-6-2026/livro-1-titulo-3/"
+      },
+      {
+        "label": "Livro I · Título IV - Da Cesta Básica Nacional de Alimentos",
+        "link": "/legislacao/cgibs/res-cgibs-6-2026/livro-1-titulo-4/"
+      },
+      {
+        "label": "Livro I · Título V - Dos regimes diferenciados do IBS",
+        "link": "/legislacao/cgibs/res-cgibs-6-2026/livro-1-titulo-5/"
+      },
+      {
+        "label": "Livro I · Título VI - Dos regimes específicos do IBS",
+        "link": "/legislacao/cgibs/res-cgibs-6-2026/livro-1-titulo-6/"
+      },
+      {
+        "label": "Livro I · Título VII - Da Zona Franca de Manaus e das Áreas de Livre Comércio",
+        "link": "/legislacao/cgibs/res-cgibs-6-2026/livro-1-titulo-7/"
+      },
+      {
+        "label": "Livro I · Título VIII - Das compras governamentais",
+        "link": "/legislacao/cgibs/res-cgibs-6-2026/livro-1-titulo-8/"
+      },
+      {
+        "label": "Livro I · Título IX - Da consulta sobre a aplicação da legislação comum ao IBS e à CBS",
+        "link": "/legislacao/cgibs/res-cgibs-6-2026/livro-1-titulo-9/"
+      },
+      {
+        "label": "Livro I · Título X - Da harmonização do IBS e da CBS",
+        "link": "/legislacao/cgibs/res-cgibs-6-2026/livro-1-titulo-10/"
+      },
+      {
+        "label": "Livro I · Título XI - Da associação pública",
+        "link": "/legislacao/cgibs/res-cgibs-6-2026/livro-1-titulo-11/"
+      },
+      {
+        "label": "Livro I · Título XII - Do período de transição das operações com bens imóveis",
+        "link": "/legislacao/cgibs/res-cgibs-6-2026/livro-1-titulo-12/"
+      },
+      {
+        "label": "Livro I · Título XIII - Disposições finais",
+        "link": "/legislacao/cgibs/res-cgibs-6-2026/livro-1-titulo-13/"
+      },
+      {
+        "label": "Livro II · Título I - Das alíquotas do IBS",
+        "link": "/legislacao/cgibs/res-cgibs-6-2026/livro-2-titulo-1/"
+      },
+      {
+        "label": "Livro II · Título II - Dos percentuais de crédito presumido do IBS",
+        "link": "/legislacao/cgibs/res-cgibs-6-2026/livro-2-titulo-2/"
+      },
+      {
+        "label": "Livro II · Título III - Do pagamento indevido ou a maior do IBS",
+        "link": "/legislacao/cgibs/res-cgibs-6-2026/livro-2-titulo-3/"
+      },
+      {
+        "label": "Livro II · Título IV - Do ressarcimento do IBS",
+        "link": "/legislacao/cgibs/res-cgibs-6-2026/livro-2-titulo-4/"
+      },
+      {
+        "label": "Livro II · Título V - Da devolução e do cancelamento",
+        "link": "/legislacao/cgibs/res-cgibs-6-2026/livro-2-titulo-5/"
+      },
+      {
+        "label": "Livro II · Título VI - Do IBS sobre importações",
+        "link": "/legislacao/cgibs/res-cgibs-6-2026/livro-2-titulo-6/"
+      },
+      {
+        "label": "Livro II · Título VII - Da devolução personalizada do IBS (cashback)",
+        "link": "/legislacao/cgibs/res-cgibs-6-2026/livro-2-titulo-7/"
+      },
+      {
+        "label": "Livro II · Título VIII - Dos programas de incentivo à cidadania fiscal",
+        "link": "/legislacao/cgibs/res-cgibs-6-2026/livro-2-titulo-8/"
+      },
+      {
+        "label": "Livro II · Título IX - Da devolução do IBS ao turista estrangeiro",
+        "link": "/legislacao/cgibs/res-cgibs-6-2026/livro-2-titulo-9/"
+      },
+      {
+        "label": "Livro II · Título X - Da Zona Franca de Manaus e das Áreas de Livre Comércio",
+        "link": "/legislacao/cgibs/res-cgibs-6-2026/livro-2-titulo-10/"
+      },
+      {
+        "label": "Livro II · Título XI - Da administração do IBS",
+        "link": "/legislacao/cgibs/res-cgibs-6-2026/livro-2-titulo-11/"
+      },
+      {
+        "label": "Livro II · Título XII - Da transição para o IBS",
+        "link": "/legislacao/cgibs/res-cgibs-6-2026/livro-2-titulo-12/"
+      },
+      {
+        "label": "Livro III - Das disposições finais",
+        "link": "/legislacao/cgibs/res-cgibs-6-2026/livro-3/"
+      },
+      {
+        "label": "Anexo II - Repetro (art. 164) tabela I - lista de bens (Repetro-temporário) (art. 164, inciso i) item NCM/SH descrição comercial 1 2844 fonte radioativa (para medição/marcação).",
+        "link": "/legislacao/cgibs/res-cgibs-6-2026/anexo-2/"
+      }
+    ]
+  },
+  {
+    "id": "res-cgibs-13-2026",
+    "grupo": "cgibs",
+    "ordem": 2,
+    "titulo": "Resolução CGIBS nº 13, de 22 de julho de 2026",
+    "rotulo": "Resolução 13/2026 (altera o Regulamento do IBS)",
+    "url": "https://www.cgibs.gov.br/upload/arquivos/202607/22121010-resolucao-cgibs-n-13-de-22-de-julho-de-2026.pdf",
+    "link": "/legislacao/cgibs/res-cgibs-13-2026/",
+    "ementa": "COMITÊ GESTOR DO IMPOSTO SOBRE BENS E SERVIÇOS – CGIBS CONSELHO SUPERIOR RESOLUÇÃO CGIBS Nº 13, DE 22 DE JULHO DE 2026 Altera o Regulamenta o Imposto sobre Bens e Serviços (IBS) e dá outras providências.",
+    "captura": {
+      "url": "https://www.cgibs.gov.br/upload/arquivos/202607/22121010-resolucao-cgibs-n-13-de-22-de-julho-de-2026.pdf",
+      "capturadoEm": "2026-11-17T13:06:05.007Z",
+      "bytes": 481153,
+      "sha256": "527f5b01b2c8effd984c0334ab1c3068d3926f4f77f90d023211758ee67f7222"
+    },
+    "paginas": []
+  }
+]
