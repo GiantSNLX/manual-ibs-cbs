@@ -339,4 +339,5 @@ header.header .right-group { margin-inline-start: auto; }
   site-search > button[data-open-modal] > :not(svg) { display: none; }
 }
 /* Na home a busca grande já está no topo da página. */
-:root:has(.inicio-hero) header.header .header > :has(> site-search) { display: none; }
+/* Esconde só o botão: a janela de resultados (e o Ctrl K) moram no mesmo componente. */
+:root:has(.inicio-hero) site-search > button[data-open-modal] { display: none; }
