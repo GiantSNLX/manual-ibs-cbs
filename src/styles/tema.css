@@ -1,0 +1,298 @@
+/* Tema do site: tokens de cor (claro e escuro), tipografia e peças comuns.
+   Paletas: claro "cool-white-slate" (verde-azulado de rio), escuro "green-black-bone".
+   Uma única cor de ação (o verde-azulado) para links, botão principal e foco. */
+
+/* ---------- Tokens: escuro (padrão do Starlight) ---------- */
+:root,
+::backdrop {
+  --c-bg: #161c1a;
+  --c-surface: #1d2523;
+  --c-surface-2: #232c29;
+  --c-ink: #e3e2da;
+  --c-ink-strong: #f1f0ea;
+  --c-text: #d5d5cc;
+  --c-muted: #969c95;
+  --c-accent: #9fc7b8;
+  --c-accent-strong: #c2ded3;
+  --c-accent-soft: #233630;
+  --c-on-accent: #121816;
+  --c-line: color-mix(in oklab, var(--c-ink) 12%, transparent);
+  --c-line-strong: color-mix(in oklab, var(--c-ink) 22%, transparent);
+
+  --sl-color-white: var(--c-ink-strong);
+  --sl-color-gray-1: var(--c-ink);
+  --sl-color-gray-2: var(--c-text);
+  --sl-color-gray-3: var(--c-muted);
+  --sl-color-gray-4: #6f766f;
+  --sl-color-gray-5: #34403b;
+  --sl-color-gray-6: var(--c-surface);
+  --sl-color-black: var(--c-bg);
+
+  --sl-color-accent-low: var(--c-accent-soft);
+  --sl-color-accent: var(--c-accent);
+  --sl-color-accent-high: var(--c-accent-strong);
+  --sl-color-text: var(--c-text);
+  --sl-color-text-accent: var(--c-accent);
+  --sl-color-text-invert: var(--c-on-accent);
+  --sl-color-bg: var(--c-bg);
+  --sl-color-bg-nav: var(--c-bg);
+  --sl-color-bg-sidebar: var(--c-bg);
+  --sl-color-bg-inline-code: var(--c-surface-2);
+  --sl-color-hairline-light: var(--c-line-strong);
+  --sl-color-hairline: var(--c-line);
+  --sl-color-hairline-shade: var(--c-line);
+  --sl-color-backdrop-overlay: color-mix(in oklab, var(--c-bg) 72%, transparent);
+
+  /* Avisos: atenção em âmbar, nota em azul, dica no próprio acento (nada de violeta). */
+  --aviso-atencao: #e0b25a;
+  --aviso-atencao-fundo: #2a2518;
+  --aviso-nota: #8fb4e3;
+  --aviso-nota-fundo: #1b2430;
+  --aviso-dica: var(--c-accent);
+  --aviso-dica-fundo: var(--c-accent-soft);
+  --aviso-perigo: #ef8f80;
+  --aviso-perigo-fundo: #301d1a;
+
+  /* Tipografia */
+  --sl-font: 'Geist Variable';
+  --sl-font-mono: 'Geist Mono Variable';
+  --sl-line-height: 1.7;
+  --sl-line-height-headings: 1.2;
+  --sl-text-h1: clamp(2rem, 1.4vw + 1.5rem, 2.625rem);
+  --sl-text-h2: clamp(1.5rem, 0.6vw + 1.3rem, 1.875rem);
+  --sl-text-h3: 1.3125rem;
+  --sl-text-h4: 1.125rem;
+  --sl-text-h5: 1rem;
+
+  /* Movimento */
+  --m-in: 150ms;
+  --m-out: 120ms;
+  --m-press: 90ms;
+  --ease: cubic-bezier(.2, .8, .2, 1);
+  --m-ease-enter: cubic-bezier(.22, 1, .36, 1);
+  --m-ease-io: cubic-bezier(.65, 0, .35, 1);
+
+  /* Raio "sharp" */
+  --r-sm: 4px;
+  --r-md: 6px;
+  --r-lg: 8px;
+
+  --sl-content-width: 48rem;
+}
+
+/* ---------- Tokens: claro ---------- */
+:root[data-theme='light'],
+[data-theme='light'] ::backdrop {
+  --c-bg: #f7f9fa;
+  --c-surface: #ecf0f2;
+  --c-surface-2: #e3e9ec;
+  --c-ink: #1f3038;
+  --c-ink-strong: #15232a;
+  --c-text: #23353d;
+  --c-muted: #56646b;
+  --c-accent: #0d7480;
+  --c-accent-strong: #08545d;
+  --c-accent-soft: #dcedee;
+  --c-on-accent: #ffffff;
+
+  --sl-color-white: var(--c-ink-strong);
+  --sl-color-gray-1: var(--c-ink);
+  --sl-color-gray-2: var(--c-text);
+  --sl-color-gray-3: var(--c-muted);
+  --sl-color-gray-4: #8a979d;
+  --sl-color-gray-5: #c8d2d6;
+  --sl-color-gray-6: var(--c-surface);
+  --sl-color-gray-7: #f1f4f5;
+  --sl-color-black: var(--c-bg);
+  --sl-color-text-accent: var(--c-accent);
+
+  --aviso-atencao: #a8670a;
+  --aviso-atencao-fundo: #fbf2df;
+  --aviso-nota: #2b62a8;
+  --aviso-nota-fundo: #e8f0fa;
+  --aviso-perigo: #b3402f;
+  --aviso-perigo-fundo: #fbe9e6;
+}
+
+/* ---------- Base ---------- */
+body {
+  background: var(--c-bg);
+  font-feature-settings: 'ss01' on;
+  -webkit-font-smoothing: antialiased;
+}
+:where(a, button, summary, input, [tabindex]):focus-visible {
+  outline: 2px solid var(--c-accent);
+  outline-offset: 2px;
+}
+kbd {
+  white-space: nowrap;
+  font-family: var(--__sl-font-mono);
+  font-size: 0.8125rem;
+  padding: 0.1rem 0.4rem;
+  border: 1px solid var(--c-line-strong);
+  border-bottom-width: 2px;
+  border-radius: var(--r-sm);
+  color: var(--c-ink);
+  background: var(--c-surface);
+}
+
+/* Cabeçalho: opaco, filete de 1px, sem sombra nem desfoque. */
+header.header {
+  background: var(--c-bg);
+  border-bottom: 1px solid var(--c-line);
+}
+.site-title {
+  color: var(--c-ink-strong);
+  font-weight: 500;
+  letter-spacing: -0.01em;
+}
+.site-title img {
+  height: 1.75rem;
+}
+
+/* Barra lateral: item atual com barra de 2px no acento. */
+nav.sidebar a {
+  border-radius: var(--r-sm);
+  transition: background-color var(--m-out) var(--ease), color var(--m-out) var(--ease);
+}
+nav.sidebar a[aria-current='page'],
+nav.sidebar a[aria-current='page']:hover,
+nav.sidebar a[aria-current='page']:focus {
+  background: var(--c-accent-soft);
+  color: var(--c-ink-strong);
+  font-weight: 500;
+  box-shadow: inset 2px 0 0 var(--c-accent);
+}
+nav.sidebar .large {
+  font-weight: 500;
+  color: var(--c-ink-strong);
+}
+nav.sidebar summary .group-label {
+  font-weight: 500;
+}
+
+/* Título da página e conteúdo de leitura */
+h1#_top {
+  font-weight: 500;
+  letter-spacing: -0.025em;
+  text-wrap: balance;
+}
+.sl-markdown-content {
+  font-size: 1.0625rem;
+}
+.sl-markdown-content :is(h2, h3, h4, h5) {
+  font-weight: 500;
+  letter-spacing: -0.015em;
+  color: var(--c-ink-strong);
+  text-wrap: balance;
+}
+.sl-markdown-content h2 {
+  letter-spacing: -0.02em;
+}
+.sl-markdown-content :is(p, li) {
+  text-wrap: pretty;
+}
+.sl-markdown-content strong,
+.sl-markdown-content b {
+  font-weight: 600;
+  color: var(--c-ink-strong);
+}
+.sl-markdown-content a:not(.d-rot, .sl-link-button):not(:where(.not-content *)) {
+  color: var(--c-accent);
+  text-decoration-line: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.2em;
+  text-decoration-color: color-mix(in oklab, var(--c-accent) 45%, transparent);
+  transition: text-decoration-color var(--m-out) var(--ease), color var(--m-out) var(--ease);
+}
+.sl-markdown-content a:not(.d-rot, .sl-link-button):not(:where(.not-content *)):hover {
+  color: var(--c-accent-strong);
+  text-decoration-color: currentColor;
+}
+.sl-markdown-content code:not(pre code) {
+  border-radius: var(--r-sm);
+  font-size: 0.875em;
+}
+
+/* Tabelas do manual: filetes finos, cabeçalho discreto. */
+.sl-markdown-content table {
+  font-size: 0.9375rem;
+  border-collapse: collapse;
+}
+.sl-markdown-content :is(th, td) {
+  border: 0;
+  border-bottom: 1px solid var(--c-line);
+  padding: 0.6rem 0.75rem;
+  vertical-align: top;
+}
+.sl-markdown-content th {
+  font-weight: 500;
+  color: var(--c-ink-strong);
+  background: transparent;
+  border-bottom: 1px solid var(--c-line-strong);
+}
+.sl-markdown-content tr:nth-child(2n) {
+  background: transparent;
+}
+
+/* Avisos: chapados, filete de 1px e barra de 3px. */
+.starlight-aside {
+  border: 1px solid color-mix(in oklab, var(--sl-color-asides-border) 30%, transparent);
+  border-inline-start: 3px solid var(--sl-color-asides-border);
+  border-radius: var(--r-md);
+  color: var(--c-text);
+  font-size: 1rem;
+}
+.starlight-aside__title {
+  font-size: 1rem;
+  font-weight: 600;
+}
+.starlight-aside--caution {
+  --sl-color-asides-text-accent: var(--aviso-atencao);
+  --sl-color-asides-border: var(--aviso-atencao);
+  background-color: var(--aviso-atencao-fundo);
+}
+.starlight-aside--note {
+  --sl-color-asides-text-accent: var(--aviso-nota);
+  --sl-color-asides-border: var(--aviso-nota);
+  background-color: var(--aviso-nota-fundo);
+}
+.starlight-aside--tip {
+  --sl-color-asides-text-accent: var(--aviso-dica);
+  --sl-color-asides-border: var(--aviso-dica);
+  background-color: var(--aviso-dica-fundo);
+}
+.starlight-aside--danger {
+  --sl-color-asides-text-accent: var(--aviso-perigo);
+  --sl-color-asides-border: var(--aviso-perigo);
+  background-color: var(--aviso-perigo-fundo);
+}
+.starlight-aside__content a {
+  color: inherit;
+  text-decoration-color: currentColor;
+}
+
+/* Índice da página (à direita) */
+starlight-toc a[aria-current='true'] {
+  color: var(--c-accent);
+}
+
+/* Paginação no rodapé dos capítulos: um só estilo de cartão. */
+.pagination-links a {
+  border-radius: var(--r-lg);
+  border-color: var(--c-line-strong);
+  box-shadow: none;
+  transition: transform var(--m-out) var(--ease), border-color var(--m-out) var(--ease);
+}
+@media (hover: hover) and (pointer: fine) {
+  .pagination-links a:hover {
+    transform: translateY(-2px);
+    border-color: var(--c-accent);
+    transition-duration: 180ms;
+  }
+}
+
+/* Celular: nada passa da tela. */
+.sl-markdown-content {
+  overflow-wrap: break-word;
+}

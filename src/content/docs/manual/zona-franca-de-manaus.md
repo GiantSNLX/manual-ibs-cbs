@@ -239,6 +239,10 @@ O [art. 474 da LC 214/2025](/legislacao/federal/lc-214-2025/livro-3-titulo-3/#ar
 O caput fala em "período compreendido entre 2027 e 2032", mas os incisos só trazem proporções para 2029 a 2032. Também não há redução prevista para os 70% do art. 446, que não aparece no art. 474.
 :::
 
+:::caution[Duas leituras de "reduzidos nas seguintes proporções"]
+A expressão do [art. 474](/legislacao/federal/lc-214-2025/livro-3-titulo-3/#art-474) admite duas leituras: reduzidos **para** 9/10, 8/10, 7/10 e 6/10 do percentual, ou reduzidos **em** 9/10, 8/10, 7/10 e 6/10. Na segunda, os 7,5% cairiam para 0,75% em 2029 e subiriam ano a ano até 3,0% em 2032, ou seja, o crédito cresceria até 2032, o que não combina com uma redução gradual. Por isso o manual adota a primeira leitura ("reduzidos para 9/10, 8/10..."), usada na tabela acima. Confira a regulamentação e a posição dos fiscos antes de aplicar.
+:::
+
 ## Operações dentro da ZFM
 
 ### Bens intermediários entre indústrias incentivadas

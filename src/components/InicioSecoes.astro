@@ -1,0 +1,136 @@
+---
+// Seções da página inicial: capítulos do manual, legislação e o aviso de uso.
+import { getCollection } from 'astro:content';
+import artigos from '../data/artigos.json';
+import legislacao from '../data/legislacao.json';
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const url = (p: string) => base + p;
+const fmt = (n: number) => n.toLocaleString('pt-BR');
+
+const capitulos = (await getCollection('docs', (e) => e.id.startsWith('manual/') && e.id !== 'manual'))
+  .filter((e) => (e.data.sidebar?.order ?? 0) > 0)
+  .sort((a, b) => (a.data.sidebar?.order ?? 0) - (b.data.sidebar?.order ?? 0));
+
+const PARTES = [
+  { nome: 'Fundamentos', de: 1, ate: 5 },
+  { nome: 'Zona Franca de Manaus', de: 6, ate: 7 },
+  { nome: 'Áreas de Livre Comércio e estados', de: 8, ate: 10 },
+];
+const partes = PARTES.map((p) => ({
+  ...p,
+  itens: capitulos.filter((c) => {
+    const o = c.data.sidebar?.order ?? 0;
+    return o >= p.de && o <= p.ate;
+  }),
+}));
+
+const GRUPOS: Record<string, string> = {
+  federal: 'Legislação federal',
+  'zfm-alc': 'Zona Franca e Áreas de Livre Comércio',
+  cgibs: 'Comitê Gestor do IBS',
+  amazonas: 'Amazonas',
+  roraima: 'Roraima',
+};
+const qtd = (id: string) => Object.keys((artigos as Record<string, object>)[id] || {}).length;
+const grupos = Object.entries(GRUPOS)
+  .map(([id, nome]) => ({ id, nome, normas: legislacao.filter((n) => n.grupo === id) }))
+  .filter((g) => g.normas.length);
+const [federal, zfm, ...demais] = grupos;
+const seta = '<svg class="m-arrow" aria-hidden="true" viewBox="0 0 20 20" width="16" height="16"><path d="M4 10h11m-4-5 5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+const rotulo = (r: string) => r.replace(/\s*\(([^)]*)\)\s*$/, '');
+const nota = (r: string) => (r.match(/\(([^)]*)\)\s*$/) || [])[1] || '';
+---
+
+<div class="inicio not-content">
+  <section class="inicio-secao" aria-labelledby="sec-manual">
+    <div class="inicio-wrap">
+      <div class="inicio-cabeca">
+        <h2 id="sec-manual">Dez capítulos do manual</h2>
+        <p>Do básico do IBS e da CBS aos regimes da ZFM, das Áreas de Livre Comércio e dos estados. Cada regra traz o artigo que a sustenta.</p>
+      </div>
+      <div class="partes">
+        {partes.map((p) => (
+          <div class="parte">
+            <h3>{p.nome}</h3>
+            <ol class="linhas">
+              {p.itens.map((c) => (
+                <li>
+                  <a class="cartao" href={url(`/${c.id}/`)}>
+                    <span class="cartao-num">{String(c.data.sidebar?.order).padStart(2, '0')}</span>
+                    <span class="cartao-corpo">
+                      <span class="cartao-titulo">{c.data.title}<Fragment set:html={seta} /></span>
+                      <span class="cartao-texto">{c.data.description}</span>
+                    </span>
+                  </a>
+                </li>
+              ))}
+            </ol>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="inicio-secao inicio-secao-alt" aria-labelledby="sec-lei">
+    <div class="inicio-wrap">
+      <div class="inicio-cabeca">
+        <h2 id="sec-lei">Legislação na íntegra</h2>
+        <p>Texto compilado das publicações oficiais, sem as redações revogadas. O número ao lado de cada norma é a quantidade de artigos com âncora própria.</p>
+      </div>
+      <div class="normas">
+        {[federal, zfm].map((g) => (
+          <div class="grupo">
+            <h3>{g.nome}</h3>
+            <ul class="normas-lista">
+              {g.normas.map((n) => (
+                <li>
+                  <a href={url(n.link)}>
+                    <span class="norma-nome">{rotulo(n.rotulo)}</span>
+                    {nota(n.rotulo) && <span class="norma-nota">{nota(n.rotulo)}</span>}
+                    <span class="norma-qtd">{fmt(qtd(n.id))}</span>
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))}
+        <div class="grupo">
+          {demais.map((g) => (
+            <>
+              <h3>{g.nome}</h3>
+              <ul class="normas-lista">
+                {g.normas.map((n) => (
+                  <li>
+                    <a href={url(n.link)}>
+                      <span class="norma-nome">{rotulo(n.rotulo)}</span>
+                      {nota(n.rotulo) && <span class="norma-nota">{nota(n.rotulo)}</span>}
+                      <span class="norma-qtd">{fmt(qtd(n.id))}</span>
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </>
+          ))}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="inicio-secao inicio-fecho" aria-labelledby="sec-uso">
+    <div class="inicio-wrap fecho-grade">
+      <div>
+        <h2 id="sec-uso">Material de consulta, não parecer</h2>
+        <p>O texto legal é reproduzido das publicações oficiais e pode ter mudado depois da data de captura indicada em cada norma. Para decisão fiscal, confira sempre a fonte oficial.</p>
+        <div class="inicio-acoes">
+          <a class="btn btn-secundario" href={url('/fontes/')}><span>Ver as fontes e datas</span><Fragment set:html={seta} /></a>
+        </div>
+      </div>
+      <dl class="fecho-dicas">
+        <div><dt><kbd>Ctrl</kbd> <kbd>K</kbd></dt><dd>Busca em todo o manual e em toda a legislação.</dd></div>
+        <div><dt>Art. 444.</dt><dd>Clique no rótulo de um artigo para ter o link direto para ele.</dd></div>
+        <div><dt>Atenção</dt><dd>Os avisos marcam divergência entre lei e regulamento, ato ainda não publicado ou texto com mais de uma leitura.</dd></div>
+      </dl>
+    </div>
+  </section>
+</div>

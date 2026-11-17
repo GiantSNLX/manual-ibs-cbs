@@ -1,0 +1,9 @@
+---
+// Substitui o Hero do Starlight: a home ganha o hero próprio; as demais (como a 404) mantêm o padrão.
+import Padrao from '@astrojs/starlight/components/Hero.astro';
+import HeroInicio from './HeroInicio.astro';
+
+const ehInicio = ['index', ''].includes(Astro.locals.starlightRoute.entry.id);
+---
+
+{ehInicio ? <HeroInicio /> : <Padrao />}

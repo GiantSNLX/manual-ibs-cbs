@@ -1,6 +1,5 @@
 /* Texto legal: um parágrafo por dispositivo, recuo pela hierarquia. */
 :root {
-  --sl-content-width: 52rem;
   --recuo: 1.6rem;
 }
 
@@ -13,16 +12,17 @@
   scroll-margin-top: calc(var(--sl-nav-height) + 1.5rem);
 }
 .sl-markdown-content .d-rot {
-  font-weight: 700;
+  font-weight: 600;
   text-decoration: none;
-  color: var(--sl-color-white);
+  color: var(--c-ink-strong);
+  transition: color var(--m-out) var(--ease);
 }
-.sl-markdown-content .d-rot:hover { color: var(--sl-color-accent-high); text-decoration: underline; }
+.sl-markdown-content .d-rot:hover { color: var(--c-accent); text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 0.2em; }
 .sl-markdown-content p.n1 { padding-left: calc(var(--recuo) * 1); }
 .sl-markdown-content p.n2 { padding-left: calc(var(--recuo) * 2); }
 .sl-markdown-content p.n3 { padding-left: calc(var(--recuo) * 3); }
 .sl-markdown-content p.n4 { padding-left: calc(var(--recuo) * 4); }
-.sl-markdown-content p.d b { color: var(--sl-color-white); }
+.sl-markdown-content p.d b { color: var(--c-ink-strong); font-weight: 600; }
 .sl-markdown-content p.d-rubrica {
   margin-top: 1.4rem;
   font-weight: 600;
@@ -32,18 +32,18 @@
 .sl-markdown-content p.d-cit {
   margin-left: var(--recuo);
   padding-left: 0.9rem;
-  border-left: 2px solid var(--sl-color-gray-5);
-  color: var(--sl-color-gray-2);
-  font-size: var(--sl-text-sm);
+  border-left: 2px solid var(--c-line-strong);
+  color: var(--c-muted);
+  font-size: 0.9375rem;
 }
 .sl-markdown-content .nota {
-  font-size: 0.82em;
-  color: var(--sl-color-gray-3);
+  font-size: 0.8125rem;
+  color: var(--c-muted);
 }
-.sl-markdown-content :target {
-  background: var(--sl-color-accent-low);
-  outline: 0.4rem solid var(--sl-color-accent-low);
-  border-radius: 2px;
+.sl-markdown-content :target:not(:where(.not-content *)) {
+  background: var(--c-accent-soft);
+  box-shadow: -0.5rem 0 0 0 var(--c-accent-soft), -0.7rem 0 0 0 var(--c-accent), 0.5rem 0 0 0 var(--c-accent-soft);
+  border-radius: 0 var(--r-sm) var(--r-sm) 0;
 }
 .sl-markdown-content .tabela-lei {
   overflow-x: auto;
@@ -56,7 +56,7 @@
 }
 .sl-markdown-content .tabela-lei td,
 .sl-markdown-content .tabela-lei th {
-  border: 1px solid var(--sl-color-gray-5);
+  border: 1px solid var(--c-line-strong);
   padding: 0.3rem 0.5rem;
   vertical-align: top;
 }

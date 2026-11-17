@@ -1,0 +1,117 @@
+---
+// Hero da página inicial (escolhido por Hero.astro).
+// O painel da direita mostra o próprio produto: uma regra do manual que leva ao artigo da lei.
+import { readFileSync } from 'node:fs';
+import { join } from 'node:path';
+const PAGE_TITLE_ID = '_top'; // mesmo id que o Starlight usa no título da página
+import artigos from '../data/artigos.json';
+import legislacao from '../data/legislacao.json';
+
+const { data } = Astro.locals.starlightRoute.entry;
+const { tagline = '' } = data.hero || {};
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const url = (p: string) => base + p;
+
+const totalArtigos = Object.values(artigos).reduce((s, n) => s + Object.keys(n as object).length, 0);
+const fmt = (n: number) => n.toLocaleString('pt-BR');
+
+// Trecho real do art. 444 da LC 214/2025, lido do arquivo convertido (caput e § 1º).
+const fonte = readFileSync(join(process.cwd(), 'src/content/docs/legislacao/federal/lc-214-2025/livro-3-titulo-1.md'), 'utf8');
+const limpar = (html: string) => html.replace(/<[^>]+>/g, '').replace(/\s*Produção de efeitos\s*$/, '').trim();
+const trecho = fonte.slice(fonte.indexOf('<p class="d d-art" id="art-444"'));
+const [p1, p2] = trecho.split(/\n\s*\n/).map(limpar);
+const caput = p1.replace(/^Art\. 444\.\s*/, '');
+const paragrafo1 = p2.replace(/^§ 1º\s*/, '');
+
+const linkLei = url('/legislacao/federal/lc-214-2025/livro-3-titulo-1/#art-444');
+const linkCapitulo = url('/manual/zona-franca-de-manaus/#crédito-presumido-de-ibs-na-importação-para-revenda');
+const seta = '<svg class="m-arrow" aria-hidden="true" viewBox="0 0 20 20" width="18" height="18"><path d="M4 10h11m-4-5 5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+---
+
+<section class="inicio-hero" data-enter aria-labelledby={PAGE_TITLE_ID}>
+  <div class="inicio-wrap inicio-hero-grade">
+    <div class="inicio-texto">
+      <p class="inicio-sobre e-linha">LC 214/2025, regulamentos e legislação local</p>
+      <h1 id={PAGE_TITLE_ID} data-page-title>
+        <span class="e-mascara"><span class="e-linha">Manual de IBS e CBS</span></span>
+        <span class="e-mascara"><span class="e-linha">na Zona Franca</span></span>
+        <span class="e-mascara"><span class="e-linha">de Manaus</span></span>
+      </h1>
+      <p class="inicio-linha e-sobe" set:html={tagline} />
+      <div class="inicio-acoes e-sobe">
+        <a class="btn btn-primario" href={url('/manual/')}><span>Abrir o manual</span><Fragment set:html={seta} /></a>
+        <a class="btn btn-secundario" href={url('/legislacao/federal/lc-214-2025/')}><span>Ler a LC 214/2025</span><Fragment set:html={seta} /></a>
+      </div>
+    </div>
+
+    <div class="leitor e-janela" data-leitor>
+      <div class="leitor-barra">
+        <span class="leitor-busca" aria-hidden="true">
+          <svg viewBox="0 0 20 20" width="15" height="15"><circle cx="8.5" cy="8.5" r="5.5" fill="none" stroke="currentColor" stroke-width="1.7" /><path d="m13 13 4 4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" /></svg>
+          <span class="leitor-consulta" data-consulta="crédito presumido importação">crédito presumido importação</span>
+        </span>
+        <kbd aria-hidden="true">Ctrl K</kbd>
+      </div>
+
+      <a class="leitor-painel leitor-manual" href={linkCapitulo}>
+        <span class="leitor-trilha">Manual / Zona Franca de Manaus</span>
+        <span class="leitor-regra">
+          Na importação de bem material para revenda presencial na ZFM, o contribuinte habilitado tem crédito presumido de{' '}
+          <strong>50% da alíquota do IBS</strong> aplicável na importação.
+        </span>
+        <span class="leitor-cita">art. 444 da LC 214/2025</span>
+      </a>
+
+      <span class="leitor-fio" aria-hidden="true"><span></span></span>
+
+      <a class="leitor-painel leitor-lei" href={linkLei}>
+        <span class="leitor-trilha">LC 214/2025 / Livro III / Título I</span>
+        <span class="leitor-art"><b>Art. 444.</b> {caput}</span>
+        <span class="leitor-art leitor-alvo"><b>§ 1º</b> {paragrafo1}</span>
+      </a>
+    </div>
+  </div>
+
+  <div class="inicio-wrap inicio-fatos e-sobe">
+    <p><strong>{fmt(totalArtigos)}</strong> artigos com link próprio</p>
+    <p><strong>{legislacao.length}</strong> normas na íntegra</p>
+    <p><strong>10</strong> capítulos com o fundamento de cada regra</p>
+  </div>
+</section>
+
+<script>
+  // Depois da entrada, uma vez: digita a busca, liga a regra ao artigo e marca o parágrafo.
+  // Repete ao passar o mouse ou focar o painel. Com movimento reduzido, fica no estado final.
+  const leitor = document.querySelector<HTMLElement>('[data-leitor]');
+  const consulta = leitor?.querySelector<HTMLElement>('[data-consulta]');
+  const reduzido = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  if (leitor && consulta && !reduzido) {
+    const texto = consulta.dataset.consulta || '';
+    let timer = 0;
+    let rodando = false;
+    const tocar = (espera: number) => {
+      if (rodando) return;
+      rodando = true;
+      leitor.classList.remove('ligado');
+      consulta.textContent = '';
+      let i = 0;
+      const digitar = () => {
+        consulta.textContent = texto.slice(0, ++i);
+        if (i < texto.length) timer = window.setTimeout(digitar, 40);
+        else timer = window.setTimeout(() => {
+          leitor.classList.add('ligado');
+          window.setTimeout(() => (rodando = false), 1400);
+        }, 200);
+      };
+      window.clearTimeout(timer);
+      timer = window.setTimeout(digitar, espera);
+    };
+    leitor.classList.add('animado');
+    tocar(900);
+    leitor.addEventListener('mouseenter', () => tocar(120));
+    leitor.addEventListener('focusin', () => tocar(120));
+  } else {
+    leitor?.classList.add('ligado');
+  }
+</script>
