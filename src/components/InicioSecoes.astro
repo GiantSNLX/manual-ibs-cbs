@@ -9,13 +9,17 @@ const url = (p: string) => base + p;
 
 // Situações mais procuradas, cada uma levando ao trecho exato do capítulo.
 const situacoes = [
-  { titulo: 'Vendo para a Zona Franca de Manaus a partir de outra região', texto: 'Alíquota zero na venda e o que muda para quem compra.', link: '/manual/zona-franca-de-manaus/#alíquota-zero-na-venda-para-a-zfm' },
-  { titulo: 'Importo mercadoria para revender na ZFM', texto: 'Crédito presumido de IBS na importação para revenda.', link: '/manual/zona-franca-de-manaus/#crédito-presumido-de-ibs-na-importação-para-revenda' },
-  { titulo: 'Sou indústria incentivada na ZFM', texto: 'Créditos presumidos de IBS e de CBS na saída dos produtos.', link: '/manual/zona-franca-de-manaus/#crédito-presumido-na-saída-da-indústria-incentivada' },
-  { titulo: 'Preciso me habilitar na Suframa', texto: 'Quem pode usar o regime e o que a habilitação exige.', link: '/manual/zona-franca-de-manaus/#habilitação-na-suframa' },
-  { titulo: 'Opero em uma Área de Livre Comércio', texto: 'Boa Vista, Bonfim, Tabatinga e as demais: o que vale no IBS e na CBS.', link: '/manual/areas-de-livre-comercio/#benefícios-do-ibs-e-da-cbs' },
-  { titulo: 'Quero saber o que muda em cada ano', texto: 'O calendário da transição de 2026 a 2033.', link: '/manual/visao-geral/#cronograma-de-transição-2026-a-2033' },
+  { icone: 'venda', titulo: 'Vendo para a Zona Franca de Manaus a partir de outra região', texto: 'Alíquota zero na venda e o que muda para quem compra.', link: '/manual/zona-franca-de-manaus/#alíquota-zero-na-venda-para-a-zfm' },
+  { icone: 'importa', titulo: 'Importo mercadoria para revender na ZFM', texto: 'Crédito presumido de IBS na importação para revenda.', link: '/manual/zona-franca-de-manaus/#crédito-presumido-de-ibs-na-importação-para-revenda' },
+  { icone: 'industria', titulo: 'Sou indústria incentivada na ZFM', texto: 'Créditos presumidos de IBS e de CBS na saída dos produtos.', link: '/manual/zona-franca-de-manaus/#crédito-presumido-na-saída-da-indústria-incentivada' },
+  { icone: 'suframa', titulo: 'Preciso me habilitar na Suframa', texto: 'Quem pode usar o regime e o que a habilitação exige.', link: '/manual/zona-franca-de-manaus/#habilitação-na-suframa' },
+  { icone: 'alc', titulo: 'Opero em uma Área de Livre Comércio', texto: 'Boa Vista, Bonfim, Tabatinga e as demais: o que vale no IBS e na CBS.', link: '/manual/areas-de-livre-comercio/#benefícios-do-ibs-e-da-cbs' },
+  { icone: 'ano', titulo: 'Quero saber o que muda em cada ano', texto: 'O calendário da transição de 2026 a 2033.', link: '/manual/visao-geral/#cronograma-de-transição-2026-a-2033' },
 ];
+
+const ICONES: Record<string, string> = {venda: `<path d="M3 7h11v9H3zM14 10h4l3 3v3h-7"/><circle cx="7" cy="17.5" r="1.8"/><circle cx="17" cy="17.5" r="1.8"/>`, importa: `<path d="M3 15l2 4h14l2-4H3z"/><path d="M6 15V9h12v6M9 9V5h6v4"/>`, industria: `<path d="M3 20V10l5 3V10l5 3V6h4v14H3z"/><path d="M7 17h2M12 17h2"/>`, suframa: `<path d="M7 3h7l4 4v14H7z"/><path d="M14 3v4h4M10 14l2 2 4-4"/>`, alc: `<path d="M12 21s-6-5.5-6-10a6 6 0 0 1 12 0c0 4.5-6 10-6 10z"/><circle cx="12" cy="11" r="2.2"/>`, ano: `<rect x="4" y="5" width="16" height="15" rx="2"/><path d="M4 10h16M9 3v4M15 3v4"/>`};
+const svg = (k: string) => `<svg aria-hidden="true" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">${ICONES[k]}</svg>`;
+const ROMANOS = ['I', 'II', 'III'];
 
 const capitulos = (await getCollection('docs', (e) => e.id.startsWith('manual/')))
   .filter((e) => (e.data.sidebar?.order ?? 0) > 0)
@@ -51,12 +55,14 @@ const nota = (r: string) => (r.match(/\(([^)]*)\)\s*$/) || [])[1] || '';
 <div class="inicio not-content">
   <section class="inicio-secao" aria-labelledby="sec-situacoes">
     <div class="inicio-wrap">
+      <p class="secao-rotulo">Atalhos</p>
       <h2 id="sec-situacoes">Comece pela sua situação</h2>
       <p class="inicio-intro">As dúvidas mais comuns, cada uma levando direto ao trecho do manual que responde.</p>
       <ul class="situacoes">
         {situacoes.map((s) => (
           <li>
             <a class="cartao" href={url(s.link)}>
+              <span class="cartao-icone" set:html={svg(s.icone)} />
               <span class="cartao-titulo">{s.titulo}</span>
               <span class="cartao-texto">{s.texto}</span>
             </a>
@@ -68,11 +74,13 @@ const nota = (r: string) => (r.match(/\(([^)]*)\)\s*$/) || [])[1] || '';
 
   <section class="inicio-secao inicio-secao-alt" aria-labelledby="sec-manual">
     <div class="inicio-wrap">
+      <p class="secao-rotulo">Para estudar</p>
       <h2 id="sec-manual">O manual em três partes</h2>
       <p class="inicio-intro">Para estudar o tema do começo. Comece pelos fundamentos se a reforma ainda é novidade; vá direto às partes regionais se já conhece a base.</p>
       <div class="partes">
-        {partes.map((p) => (
+        {partes.map((p, i) => (
           <div class="parte">
+            <span class="parte-num" aria-hidden="true">{ROMANOS[i]}</span>
             <h3>{p.nome}</h3>
             <p>{p.texto}</p>
             <ul>
@@ -86,6 +94,7 @@ const nota = (r: string) => (r.match(/\(([^)]*)\)\s*$/) || [])[1] || '';
 
   <section class="inicio-secao" aria-labelledby="sec-lei">
     <div class="inicio-wrap">
+      <p class="secao-rotulo">Para consultar</p>
       <h2 id="sec-lei">A legislação completa</h2>
       <p class="inicio-intro">Todas as normas citadas no manual, no texto oficial e atualizado até a data de captura, com link direto para cada artigo.</p>
       <div class="normas">

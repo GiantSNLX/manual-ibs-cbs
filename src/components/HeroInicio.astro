@@ -1,8 +1,10 @@
 ---
-// Hero da página inicial (escolhido por Hero.astro): título, explicação e a busca em destaque.
+// Hero da página inicial (escolhido por Hero.astro): título, busca em destaque e
+// "Como ler", que mostra o mecanismo do site: regra → artigo da lei → aviso.
 const PAGE_TITLE_ID = '_top'; // mesmo id que o Starlight usa no título da página
 const { data } = Astro.locals.starlightRoute.entry;
 const { tagline = '' } = data.hero || {};
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 const exemplos = ['Suframa', 'crédito presumido', 'split payment', 'art. 444'];
 ---
 
@@ -11,35 +13,59 @@ const exemplos = ['Suframa', 'crédito presumido', 'split payment', 'art. 444'];
     <a href="#sec-situacoes">Situações frequentes</a>
     <a href="#sec-manual">Manual</a>
     <a href="#sec-lei">Legislação</a>
-    <a href={import.meta.env.BASE_URL + 'fontes/'}>Fontes</a>
+    <a href={base + '/fontes/'}>Fontes</a>
   </div>
 </nav>
 <section class="inicio-hero" aria-labelledby={PAGE_TITLE_ID}>
-  <div class="inicio-wrap inicio-hero-grade"><div class="inicio-hero-conteudo">
-    <p class="inicio-sobre">Reforma tributária do consumo</p>
-    <h1 id={PAGE_TITLE_ID} data-page-title>
-      IBS e CBS na Zona Franca de Manaus, no Amazonas e em Roraima
-    </h1>
-    <p class="inicio-linha" set:html={tagline} />
+  <svg class="hero-marca" aria-hidden="true" viewBox="0 0 100 140"><text x="50" y="112" text-anchor="middle">§</text></svg>
+  <div class="inicio-wrap inicio-hero-grade">
+    <div class="inicio-hero-conteudo">
+      <p class="inicio-sobre">Reforma tributária do consumo</p>
+      <h1 id={PAGE_TITLE_ID} data-page-title>
+        IBS e CBS na Zona Franca de Manaus, no Amazonas e em Roraima
+      </h1>
+      <p class="inicio-linha" set:html={tagline} />
 
-    <button type="button" class="busca-grande" data-abrir-busca>
-      <svg aria-hidden="true" viewBox="0 0 20 20" width="20" height="20"><circle cx="8.5" cy="8.5" r="5.5" fill="none" stroke="currentColor" stroke-width="1.7" /><path d="m13 13 4 4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" /></svg>
-      <span>Pesquisar no manual e na lei</span>
-      <kbd>Ctrl K</kbd>
-    </button>
-    <p class="busca-exemplos">
-      <span>Por exemplo:</span>
-      {exemplos.map((e) => <button type="button" data-abrir-busca={e}>{e}</button>)}
-    </p>
+      <button type="button" class="busca-grande" data-abrir-busca>
+        <svg aria-hidden="true" viewBox="0 0 20 20" width="20" height="20"><circle cx="8.5" cy="8.5" r="5.5" fill="none" stroke="currentColor" stroke-width="1.8" /><path d="m13 13 4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" /></svg>
+        <span>Pesquisar no manual e na lei</span>
+        <kbd>Ctrl K</kbd>
+      </button>
+      <p class="busca-exemplos">
+        <span>Por exemplo:</span>
+        {exemplos.map((e) => <button type="button" data-abrir-busca={e}>{e}</button>)}
+      </p>
+    </div>
+
+    <aside class="inicio-ler" aria-labelledby="como-ler">
+      <h2 id="como-ler">Como ler este manual</h2>
+      <ol class="passos">
+        <li>
+          <span class="passo-num" aria-hidden="true">1</span>
+          <div>
+            <h3>A regra, em linguagem direta</h3>
+            <p>Cada tópico explica o que vale, para quem e a partir de quando.</p>
+          </div>
+        </li>
+        <li>
+          <span class="passo-num" aria-hidden="true">2</span>
+          <div>
+            <h3>O artigo que sustenta a regra</h3>
+            <p>Clique na referência para abrir o artigo exato da lei, já destacado.</p>
+            <a class="exemplo-cita" href={base + '/legislacao/federal/lc-214-2025/livro-3-titulo-1/#art-444'}>art. 444 da LC 214/2025<svg aria-hidden="true" viewBox="0 0 20 20" width="14" height="14"><path d="M4 10h11m-4-5 5 5-5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /></svg></a>
+          </div>
+        </li>
+        <li>
+          <span class="passo-num" aria-hidden="true">3</span>
+          <div>
+            <h3>Os pontos de atenção</h3>
+            <p>Quadros amarelos marcam divergência entre lei e regulamento, ato ainda não publicado ou texto com mais de uma leitura.</p>
+          </div>
+        </li>
+      </ol>
+      <p class="ler-nota">Material de consulta: antes de uma decisão fiscal, confira a fonte oficial. <a href={base + '/fontes/'}>Ver fontes e datas</a></p>
+    </aside>
   </div>
-  <aside class="inicio-ler" aria-labelledby="como-ler">
-    <h2 id="como-ler">Como ler este manual</h2>
-    <dl>
-      <div><dt>Cada regra cita a lei</dt><dd>A referência no texto, como “art. 444 da LC 214/2025”, abre o artigo exato. Dentro da lei, clique no número do artigo para copiar o link dele.</dd></div>
-      <div><dt>Os avisos merecem atenção</dt><dd>Os quadros em amarelo indicam quando lei e regulamento divergem, quando falta um ato oficial ou quando o texto admite mais de uma leitura.</dd></div>
-      <div><dt>Material de consulta</dt><dd>O texto legal vem das publicações oficiais e pode ter mudado depois da data de captura. Para uma decisão fiscal, confira a fonte. <a href={import.meta.env.BASE_URL + 'fontes/'}>Ver fontes e datas</a>.</dd></div>
-    </dl>
-  </aside></div>
 </section>
 
 <script>
