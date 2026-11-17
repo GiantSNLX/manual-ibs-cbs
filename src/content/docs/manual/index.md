@@ -1,6 +1,6 @@
 ---
-title: Apresentação do manual
-description: Como o manual está organizado, como ler as referências legais e quais normas estão reproduzidas no site.
+title: "Apresentação do manual"
+description: "Como o manual está organizado, como ler as referências legais e quais normas estão reproduzidas no site."
 sidebar:
   order: 0
 ---

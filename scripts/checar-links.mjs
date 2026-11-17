@@ -31,7 +31,7 @@ for (const arquivo of paginas) {
   const html = readFileSync(arquivo, 'utf8');
   const rel = '/' + arquivo.slice(DIST.length + 1).replace(/\\/g, '/').replace(/index\.html$/, '');
   for (const [, href] of html.matchAll(/<a\s[^>]*href="([^"]+)"/g)) {
-    if (/^(https?:|mailto:|tel:|javascript:)/.test(href)) continue;
+    if (/^(https?:|mailto:|tel:|javascript:)/.test(href) || href === '#_top') continue;
     let [caminho, ancora] = href.split('#');
     if (!caminho) caminho = BASE.replace(/\/$/, '') + rel;
     if (!caminho.startsWith('/')) continue;
